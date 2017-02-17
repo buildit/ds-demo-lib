@@ -1,8 +1,9 @@
 import React from 'react';
+import './footer.less';
 
 const Footer = (props) => {
   return (
-    <div>
+    <div className="ds-demo-fotter">
       {props.children}
     </div>
   )

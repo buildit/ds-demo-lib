@@ -1,15 +1,34 @@
 const path = require('path');
+const webpack = require('webpack');
 
-// load the default config generator.
-var genDefaultConfig = require('@kadira/storybook/dist/server/config/defaults/webpack.config.js');
+module.exports = {
+	module: {
 
-module.exports = function(config, env) {
-  var config = genDefaultConfig(config, env);
+		preLoaders: [],
 
-  // Extend it as you need.
-  config.resolve.alias = {
+		loaders: [
+			{ test: /\.(js|jsx)$/, exclude: [ /node_modules/ ], loader: 'babel' },
+			{ test: /\.(png|jpg|gif|svg)$/, loader: 'file-loader' },
+      { test: /\.css$/, loader: 'style-loader!css-loader' },
+      { test: /\.less$/, loader: 'style-loader!css-loader!less-loader' },
+			{ test: /\.(eot|ttf|svg|woff|woff2)(\?v=\d+\.\d+\.\d+)?$/, loader: 'file-loader' }
+		]
+	},
+
+	resolve: {
+		root: path.resolve(__dirname),
+		extensions: ['', '.js', '.jsx'],
+    alias: {
       'blabbr-config': path.join(path.resolve(__dirname), './')
     }
+	},
 
-  return config;
+	plugins: [
+	],
+
+	devServer: {
+		stats: 'minimal'
+	},
+
+	devtool: 'source-map'
 };

@@ -1,8 +1,9 @@
 import React from 'react';
+import './header.less';
 
 const Header = (props) => {
   return (
-    <div>
+    <div className="ds-demo-header">
       {props.children}
     </div>
   )
