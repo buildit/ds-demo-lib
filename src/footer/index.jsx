@@ -3,7 +3,7 @@ import './footer.less';
 
 const Footer = (props) => {
   return (
-    <div className="ds-demo-fotter">
+    <div className="ds-demo-footer">
       {props.children}
     </div>
   )

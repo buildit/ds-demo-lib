@@ -23,6 +23,8 @@ storiesOf('Header', module)
         </p>
     </div>),
     () => (
-      <Header>{text('Header text', 'This is a header')}</Header>
+      <Header title={text('Header title', 'Header title')}>
+        {text('Header text', 'This is a header text')}
+      </Header>
     ),
   );

@@ -24,3 +24,10 @@ download(brandai.logos)
     });
     log(chalk.green.dim('Done downloading logos'));
   });
+
+  download(brandai.styles)
+    .then(data => {
+      const out = `${assetsDir}/styles.less`
+      fs.writeFileSync(out, data);
+      log(chalk.green.dim('Done downloading styles'));
+    });
