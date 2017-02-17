@@ -1,0 +1,36 @@
+{
+  "name": "@buildit/storybook-playground",
+  "version": "0.0.1",
+  "description": "Playground for storybook plugins etc.",
+  "scripts": {
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/buildit/storybook-playground.git"
+  },
+  "keywords": [
+    "react",
+    "storybook",
+    "atomic-design"
+  ],
+  "author": "Buildit",
+  "contributors": [
+    {
+      "name": "Panos Voudouris",
+      "url": "https://github.com/panosvoudouris"
+    }
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "devDependencies": {
+    "@buildit/storybook-addon-blabbr": "latest",
+    "@buildit/storybook-addon-info": "^3.3.0",
+    "@kadira/storybook": "^2.21.0",
+    "@kadira/storybook-addon-knobs": "^1.7.1"
+  }
+}
