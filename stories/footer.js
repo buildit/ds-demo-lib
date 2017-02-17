@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf, action, linkTo } from '@kadira/storybook';
 import { text } from '@kadira/storybook-addon-knobs';
 
-import { Footer } from '../src/footer';
+import { Footer } from '../src';
 
 storiesOf('Footer', module)
   .addWithInfo(
