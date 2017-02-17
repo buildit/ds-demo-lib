@@ -7,7 +7,7 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "transpile": "babel ./src --out-dir dist --copy-files",
-    "prepublish": "npm run transpile",
+    "prepublish": "npm run brandai && npm run transpile",
     "brandai": "node ./scripts/brandai"
   },
   "repository": {

@@ -4,3 +4,5 @@ src
 .editorconfig
 .storybook/db.js
 stories
+brandai.config.js
+scripts
