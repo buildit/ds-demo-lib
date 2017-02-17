@@ -2,10 +2,12 @@
   "name": "@buildit/ds-demo-lib",
   "version": "0.0.1",
   "description": "Design System Demo UI Library.",
+  "main": "dist/index.js",
   "scripts": {
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "transpile": "babel ./src --out-dir dist --copy-files"
+    "transpile": "babel ./src --out-dir dist --copy-files",
+    "prepublish": "npm run transpile"
   },
   "repository": {
     "type": "git",
