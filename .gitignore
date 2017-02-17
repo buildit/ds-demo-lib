@@ -4,3 +4,4 @@ dist
 .idea/
 .DS_Store
 .storybook/db.js
+brandai.config.js
