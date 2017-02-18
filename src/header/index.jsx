@@ -1,7 +1,6 @@
 import React from 'react';
 import './header.less';
-import cookie from '../assets/cookie.png';
-import logo from '../assets/unicorn_inc.svg';
+import logo from '../assets/unicorn_inc.png';
 
 const Header = (props) => {
   return (
