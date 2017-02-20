@@ -11,7 +11,7 @@ module.exports = {
 			{ test: /\.(png|jpg|gif)$/, loader: 'file-loader' },
       { test: /\.css$/, loader: 'style-loader!css-loader' },
       { test: /\.less$/, loader: 'style-loader!css-loader!less-loader' },
-			{ test: /\.(eot|ttf|svg|woff|woff2)(\?v=\d+\.\d+\.\d+)?$/, loader: 'file-loader' }
+			{ test: /\.(eot|ttf|woff|woff2)(\?v=\d+\.\d+\.\d+)?$/, loader: 'file-loader' }
 		]
 	},
 
