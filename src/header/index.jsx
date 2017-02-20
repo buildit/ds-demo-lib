@@ -7,7 +7,15 @@ const Header = (props) => {
     <header className="ds-demo-header">
       <img src={logo} alt="Unicorn Inc"/>
       <h1>{props.title}</h1>
-      {props.children}
+
+      <nav>
+        <ul>
+          <li><a href="#" className="btn">Home</a></li>
+          <li><a href="#" className="btn">My Account</a></li>
+          <li><a href="#" className="btn">Services</a></li>
+          <li><a href="#" className="btn">Contact Us</a></li>
+        </ul>
+      </nav>
     </header>
   )
 };

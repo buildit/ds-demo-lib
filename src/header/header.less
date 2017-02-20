@@ -4,8 +4,31 @@ header.ds-demo-header {
   display: block;
   width: 100%;
 
+  padding: @sizing-padding-small;
+
+  color: @color-inverted-fg;
+  background-color: @color-inverted-bg;
+
   img {
     width: 74px;
     height: 100px;
+  }
+
+
+
+  nav {
+    margin-top: @spacing-margin-small;
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+    }
+
+    li {
+      list-style-type: none;
+    }
+
   }
 }

@@ -1,4 +1,4 @@
-@import './assets/styles';
+@import 'colors';
 
 * {
   margin: 0;
@@ -7,21 +7,69 @@
 }
 
 body {
-  font-family: @font-body-text-font-family;
-  font-size: @font-body-text-font-size;
-  color: @font-body-text-color;
-  background-color: @color-off-white;
+  // Apply typography styles from Brand.ai
+  .font-body-text();
+
+  background-color: @color-bg;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: @font-heading-level-1-font-size;
-}
 
 h1 {
-  font-size: @font-heading-level-1-font-size;
+  // Apply typography styles from Brand.ai
+  .font-heading-level-1();
+
+  color: inherit;
 }
+
+h2 {
+  // Apply typography styles from Brand.ai
+  .font-heading-level-1();
+
+  color: inherit;
+}
+
+// Inline hyperlinks
+a {
+  color: @color-link;
+
+  &:visited {
+    color: @color-link-visited;
+  }
+}
+
+
+
+// Buttons
+button,
+input[type=button],
+.btn {
+  padding: (@sizing-padding-small / 2) @sizing-padding-small;
+
+  color: @btn-color-fg;
+  background-color: @btn-color-bg;
+
+  border: none;
+
+  -webkit-appearance: none;
+  appearance: none;
+
+
+  &:hover {
+    color: @btn-color-bg;
+    background-color: @btn-color-fg;
+  }
+}
+
+.btn {
+  display: inline-block;
+}
+
+a.btn {
+  text-decoration: none;
+
+  &:visited {
+    color: @btn-color-fg;
+    background-color: @btn-color-bg;
+  }
+}
+
