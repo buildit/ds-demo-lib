@@ -2,7 +2,7 @@
 src
 .babelrc
 .editorconfig
-.storybook/db.js
+.storybook/blabbr-config.js
 stories
 brandai.config.js
 scripts

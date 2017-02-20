@@ -19,7 +19,7 @@ module.exports = {
 		root: path.resolve(__dirname),
 		extensions: ['', '.js', '.jsx'],
     alias: {
-      'blabbr-config': path.join(path.resolve(__dirname), './')
+      'blabbr-config': path.join(path.resolve(__dirname), './blabbr-config.js')
     }
 	},
 

@@ -3,5 +3,5 @@ npm-debug.log
 dist
 .idea/
 .DS_Store
-.storybook/db.js
+.storybook/blabbr-config.js
 brandai.config.js
