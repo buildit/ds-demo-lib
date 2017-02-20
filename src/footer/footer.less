@@ -1,5 +1,45 @@
 @import '../base';
 
 .ds-demo-footer {
-  color: @color-unicorn-green;
+  padding: @sizing-padding-medium 0 @sizing-padding-small;
+
+  color: @color-inverted-fg;
+  background-color: @color-inverted-bg;
+
+  > div {
+    .content-wrapper();
+    .grid-container();
+  }
+
+  p,
+  ul {
+    .grid-element(12);
+    margin-bottom: @spacing-margin-small;
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  li {
+    list-style-type: none;
+    display: inline;
+    padding: 0;
+
+    li + li:before {
+      display: inline-block;
+      margin-left: 0.5em;
+      margin-right: 0.5em;
+      content: '|';
+    }
+  }
+
+
+  a {
+    color: @color-inverted-link;
+
+    &:visited {
+      color: @color-inverted-link-visited;
+    }
+  }
 }
