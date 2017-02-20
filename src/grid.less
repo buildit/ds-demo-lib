@@ -1,0 +1,44 @@
+@import './assets/styles'; // LESS definitions imported from Brand.ai
+
+// Poor man's grid system
+
+// Config
+@grid-col-count: 12;
+@grid-gutter-width: @spacing-margin-medium;
+
+
+// Helpers
+@grid-half-gutter: @grid-gutter-width / 2;
+
+
+// Mixins
+.content-wrapper() {
+  margin-left: auto;
+  margin-right: auto;
+
+  max-width: 1000px;
+}
+
+
+.grid-container() {
+
+  // Clearfix
+  &:after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
+
+
+
+.grid-element(@cols) {
+
+  float: left;
+  margin-left: @grid-half-gutter;
+  margin-right: @grid-half-gutter;
+
+  width: ~'calc( (100% / @{grid-col-count} * @{cols}) - @{grid-gutter-width} )';
+}
+
+

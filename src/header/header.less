@@ -3,21 +3,34 @@
 header.ds-demo-header {
   display: block;
   width: 100%;
-
-  padding: @sizing-padding-small;
+  padding: @sizing-padding-small 0;
 
   color: @color-inverted-fg;
   background-color: @color-inverted-bg;
 
-  img {
-    width: 74px;
-    height: 100px;
+  > div {
+    .content-wrapper();
+    .grid-container();
+
+    .logo {
+      .grid-element(2);
+
+      img {
+        max-width: 4em;
+      }
+    }
+
+    h1 {
+      .grid-element(8);
+    }
   }
 
 
 
+
+
   nav {
-    margin-top: @spacing-margin-small;
+    .content-wrapper();
 
     ul {
       display: flex;
@@ -28,7 +41,8 @@ header.ds-demo-header {
 
     li {
       list-style-type: none;
+      margin: @spacing-margin-small @spacing-margin-small 0 @spacing-margin-small;
     }
-
   }
+
 }
