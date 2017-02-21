@@ -1,5 +1,6 @@
 import React from 'react';
 import './header.less';
+import {Button} from '..';
 import logo from '../assets/unicorn_inc.png';
 
 const Header = (props) => {
@@ -14,10 +15,10 @@ const Header = (props) => {
 
       <nav>
         <ul>
-          <li><a href="#" className="btn">Home</a></li>
-          <li><a href="#" className="btn">My Account</a></li>
-          <li><a href="#" className="btn">Services</a></li>
-          <li><a href="#" className="btn">Contact Us</a></li>
+          <li><Button href="#">Home</Button></li>
+          <li><Button href="#">My Account</Button></li>
+          <li><Button href="#">Services</Button></li>
+          <li><Button href="#">Contact Us</Button></li>
         </ul>
       </nav>
 
