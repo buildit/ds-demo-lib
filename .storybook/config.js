@@ -15,6 +15,7 @@ addDecorator((story) => (
 ));
 
 function loadStories() {
+  require('../stories/button');
   require('../stories/header');
   require('../stories/footer');
 }
