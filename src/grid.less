@@ -5,6 +5,7 @@
 // Config
 @grid-col-count: 12;
 @grid-gutter-width: @spacing-margin-medium;
+@breakpoint: 40rem;
 
 
 // Helpers
@@ -34,11 +35,15 @@
 
 .grid-element(@cols) {
 
-  float: left;
   margin-left: @grid-half-gutter;
   margin-right: @grid-half-gutter;
+  width: ~'calc( 100% - @{grid-gutter-width} )';
 
-  width: ~'calc( (100% / @{grid-col-count} * @{cols}) - @{grid-gutter-width} )';
+  @media (min-width: @breakpoint) {
+    float: left;
+    width: ~'calc( (100% / @{grid-col-count} * @{cols}) - @{grid-gutter-width} )';
+  }
+
 }
 
 
