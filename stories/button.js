@@ -4,9 +4,9 @@ import { text } from '@kadira/storybook-addon-knobs';
 
 import { Button } from '../src';
 
-storiesOf('Button', module)
+storiesOf('Atoms', module)
   .addWithInfo(
-    'simple usage',
+    'button link',
     (<div>
         <h2>This is a JSX info section</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.

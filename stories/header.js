@@ -4,9 +4,9 @@ import { text } from '@kadira/storybook-addon-knobs';
 
 import { Header } from '../src';
 
-storiesOf('Header', module)
+storiesOf('Organisms', module)
   .addWithInfo(
-    'simple usage',
+    'page header',
     (<div>
         <h2>This is a JSX info section</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -23,7 +23,7 @@ storiesOf('Header', module)
         </p>
     </div>),
     () => (
-      <Header title={text('Header title', 'Header title')}>
+      <Header title={text('Header title', 'Page title')}>
         {text('Header text', 'This is the header text')}
       </Header>
     ),

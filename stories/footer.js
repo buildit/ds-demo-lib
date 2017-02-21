@@ -4,9 +4,9 @@ import { text } from '@kadira/storybook-addon-knobs';
 
 import { Footer } from '../src';
 
-storiesOf('Footer', module)
+storiesOf('Organisms', module)
   .addWithInfo(
-    'simple usage',
+    'page footer',
     (<div>
         <h2>This is a JSX info section</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
