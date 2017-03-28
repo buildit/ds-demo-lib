@@ -9,12 +9,12 @@ const Footer = (props) => {
         <nav>
           <ul>
             <li>
-              <li><a href="#">Legal</a></li>
-              <li><a href="#">Privacy</a></li>
-              <li><a href="#">Terms and conditions</a></li>
-              <li><a href="#">Cookies</a></li>
-              <li><a href="#">Accessibility</a></li>
-              <li><a href="#">Sitemap</a></li>
+              <li><a href="/">Legal</a></li>
+              <li><a href="/">Privacy</a></li>
+              <li><a href="/">Terms and conditions</a></li>
+              <li><a href="/">Cookies</a></li>
+              <li><a href="/">Accessibility</a></li>
+              <li><a href="/">Sitemap</a></li>
             </li>
           </ul>
         </nav>

@@ -15,10 +15,10 @@ const Header = (props) => {
 
       <nav>
         <ul>
-          <li><Button href="#">Home</Button></li>
-          <li><Button href="#">My Account</Button></li>
-          <li><Button href="#">Services</Button></li>
-          <li><Button href="#">Contact Us</Button></li>
+          <li><Button href="/">Home</Button></li>
+          <li><Button href="/">My Account</Button></li>
+          <li><Button href="/">Services</Button></li>
+          <li><Button href="/">Contact Us</Button></li>
         </ul>
       </nav>
 

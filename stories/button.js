@@ -8,18 +8,24 @@ storiesOf('Atoms', module)
   .addWithInfo(
     'button link',
     (<div>
-        <h2>This is a JSX info section</h2>
+        <h2>This is a button</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Sed ornare massa rutrum metus commodo, a mattis velit dignissim.
             Fusce vestibulum turpis sed massa egestas pharetra. Sed at libero
             nulla.</p>
         <p>
-            <a
-                href='https://github.com/'>
-            This is a link</a>
-        </p>
-        <p>
-            <img src="http://placehold.it/350x150" />
+            This lovely button was brought to you via:
+            <ul>
+              <li>
+                <a href='#'>Link 1</a>
+              </li>
+              <li>
+                <a href='#'>Link 2</a>
+              </li>
+              <li>
+                <a href='#'>Link 3</a>
+              </li>
+            </ul>
         </p>
     </div>),
     () => (
