@@ -1,0 +1,10 @@
+button {
+  display: inline-block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid aqua;
+  background-color: #ccffff;
+  font-size: inherit;
+  padding: 0.25rem 0.5rem;
+}

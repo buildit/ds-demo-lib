@@ -1,0 +1,35 @@
+@import '../assets/styles';
+
+button,
+input[type=button],
+.btn {
+  padding: (@sizing-padding-small / 2) @sizing-padding-small;
+  color: @btn-color-fg;
+  border-radius: 0px;
+  background-color: @btn-color-bg;
+  font-size: inherit;
+
+  border: none;
+
+  -webkit-appearance: none;
+  appearance: none;
+
+
+  &:hover {
+    color: @btn-color-bg;
+    background-color: @btn-color-fg;
+  }
+}
+
+.btn {
+  display: inline-block;
+}
+
+a.btn {
+  text-decoration: none;
+
+  &:visited {
+    color: @btn-color-fg;
+    background-color: @btn-color-bg;
+  }
+}
