@@ -52,6 +52,7 @@ download(frontify.devkit).then(data => {
 });
 
 log(`${chalk.white('Downloading Frontify logo from ')} ${chalk.blue(frontify.logo)}`);
-download(frontify.logo, frontifyDir).then(data => {
+download(frontify.logo).then(data => {
+  fs.writeFileSync(`${frontifyDir}/unicorn-logo.png`, data);
   log(chalk.green.dim('Done downloading Frontify logo'));
 });
