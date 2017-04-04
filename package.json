@@ -4,6 +4,7 @@
   "description": "Design System Demo UI Library.",
   "main": "dist/index.js",
   "scripts": {
+    "start": "npm run storybook",
     "storybook": "start-storybook -p 9000",
     "build-storybook": "build-storybook",
     "transpile": "babel ./src --out-dir dist --copy-files",
