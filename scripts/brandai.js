@@ -7,7 +7,7 @@ const chalk = require('chalk');
 const log = console.log;
 
 const assetsDir = 'src/assets';
-const brandaiDir = `${assetsDir}/brandai`;
+const brandaiDir = `${assetsDir}`;
 const frontifyDir = `${assetsDir}/frontify`;
 
 // Brandai download

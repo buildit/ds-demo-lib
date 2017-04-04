@@ -8,3 +8,10 @@ button {
   font-size: inherit;
   padding: 0.25rem 0.5rem;
 }
+h1.h1-title-class {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  color: red;
+}
