@@ -8,8 +8,8 @@
     "storybook": "start-storybook -p 9000",
     "build-storybook": "build-storybook",
     "transpile": "babel ./src --out-dir dist --copy-files",
-    "prepublish": "npm run brandai && npm run transpile",
-    "brandai": "node ./scripts/brandai"
+    "prepublish": "npm run assets && npm run transpile",
+    "assets": "node ./scripts/assets"
   },
   "repository": {
     "type": "git",
