@@ -1,23 +1,49 @@
-@import '../colors';
 
 button,
 input[type=button],
 .btn {
-  padding: (@sizing-padding-small / 2) @sizing-padding-small;
-  color: @btn-color-fg;
-  border-radius: 0px;
-  background-color: @btn-color-bg;
-  font-size: inherit;
+  /* Box model */
+  padding: @udf-space-inset-squish-md;
 
-  border: none;
+  /* Typography */
+  color: @udf-color-default-fg;
+  font-size: inherit;
+  font-family: inherit;
+
+  /* Visual */
+  background-color: @udf-color-default-bg;
+  border: @udf-input-border-width solid @udf-color-default-border;
+  border-radius: @udf-input-border-radius;
 
   -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
 
-
   &:hover {
-    color: @btn-color-bg;
-    background-color: @btn-color-fg;
+    /* Typography */
+    color: @udf-color-default-hover-fg;
+
+    /* Visual */
+    background-color: @udf-color-default-hover-bg;
+    border-color: @udf-color-default-hover-border;
+  }
+
+  &:focus {
+    /* Typography */
+    color: @udf-color-default-focus-fg;
+
+    /* Visual */
+    background-color: @udf-color-default-focus-bg;
+    border-color: @udf-color-default-focus-border;
+  }
+
+  &:active {
+    /* Typography */
+    color: @udf-color-default-active-fg;
+
+    /* Visual */
+    background-color: @udf-color-default-active-bg;
+    border-color: @udf-color-default-active-border;
   }
 }
 
@@ -29,7 +55,8 @@ a.btn {
   text-decoration: none;
 
   &:visited {
-    color: @btn-color-fg;
-    background-color: @btn-color-bg;
+    color: @udf-color-link-visited;
+    border-color: @udf-color-link-visited;
+    background-color: inherit;
   }
 }

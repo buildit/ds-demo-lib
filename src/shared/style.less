@@ -1,0 +1,115 @@
+// ============  DEFINE THEMING VARIABLES AND DEFAULT VALUES  =================
+
+// ###### COLOURS #######
+
+// Default foreground colour (e.g. for text)
+@udf-color-fg: #000;
+
+// Default background color (e.g. for page background)
+@udf-color-bg: #fff;
+
+// Default inverted foreground colour
+@udf-color-fg-inverted: @udf-color-bg;
+
+// Default inverted background colour
+@udf-color-bg-inverted: @udf-color-fg;
+
+// Default text link colours
+@udf-color-link: #66f;
+@udf-color-link-hover: lighten(@udf-color-link, 20%);
+@udf-color-link-focus: @udf-color-link-hover;
+@udf-color-link-active: darken(@udf-color-link, 20%);
+@udf-color-link-visited: #a0e;
+
+// Default colours for default interactive elements (e.g. default buttons)
+@udf-color-default-fg: @udf-color-link;
+@udf-color-default-bg: @udf-color-bg;
+@udf-color-default-border: inherit; // same as fg colour!
+
+@udf-color-default-hover-fg: @udf-color-link-hover;
+@udf-color-default-hover-bg: inherit; // same as normal state
+@udf-color-default-hover-border: inherit; // same as fg colour!
+
+@udf-color-default-focus-fg: @udf-color-default-hover-fg;
+@udf-color-default-focus-bg: @udf-color-default-hover-bg;
+@udf-color-default-focus-border: @udf-color-default-hover-border;
+
+@udf-color-default-active-fg: @udf-color-link-active;
+@udf-color-default-active-bg: inherit;
+@udf-color-default-active-border: inherit; // same as fg colour!
+
+
+// ###### SPACE #######
+// Inspired by https://medium.com/eightshapes-llc/space-in-design-systems-188bcbae0d62
+
+// Define basic spacing - can also use these for horizontal gaps between inline elements
+@udf-space-xs: @udf-space-sm / 2;
+@udf-space-sm: @udf-space-md / 2;
+@udf-space-md: 1rem;
+@udf-space-lg: 2 * @udf-space-md;
+@udf-space-xl: 2 * @udf-space-lg;
+
+// Derive some insets - use for padding (or equivalent)
+@udf-space-inset-xs: @udf-space-xs;
+@udf-space-inset-sm: @udf-space-sm;
+@udf-space-inset-md: @udf-space-md;
+@udf-space-inset-lg: @udf-space-lg;
+@udf-space-inset-xl: @udf-space-xl;
+
+@udf-space-inset-squish-sm: @udf-space-xs @udf-space-sm;
+@udf-space-inset-squish-md: @udf-space-sm @udf-space-md;
+@udf-space-inset-squish-lg: @udf-space-md @udf-space-lg;
+
+// Derive some stacking spaces - use for margins (or equivalent)
+@udf-space-stack-xs: 0 0 @udf-space-xs 0;
+@udf-space-stack-sm: 0 0 @udf-space-sm 0;
+@udf-space-stack-md: 0 0 @udf-space-md 0;
+@udf-space-stack-lg: 0 0 @udf-space-lg 0;
+@udf-space-stack-xl: 0 0 @udf-space-xl 0;
+
+
+// ###### GRID #######
+
+@udf-grid-cols: 12;
+@udf-grid-gutter-width: @udf-space-lg;
+
+
+// ###### BREAKPOINTS #######
+
+@udf-breakpoint: 40rem;
+
+
+// ###### TYPOGRAPHY #######
+
+@udf-body-font-family: sans-serif;
+@udf-body-font-weight: inherit;
+@udf-body-font-size: inherit;
+
+@udf-h1-font-family: inherit;
+@udf-h1-font-weight: inherit;
+@udf-h1-font-size: inherit;
+
+@udf-h2-font-family: inherit;
+@udf-h2-font-weight: inherit;
+@udf-h2-font-size: inherit;
+
+
+// ###### INPUTS #######
+
+@udf-input-border-width: 2px;
+@udf-input-border-radius: 0;
+
+
+
+// ============================================================================
+// ############################################################################
+// ============  IMPORT MIX-INS AND BASE STYLES ===============================
+
+@import 'mixins/grid';
+@import 'base/normalise';
+
+// ============  IMPORT COMPONENT STYLES ======================================
+
+@import '../button/button';
+@import '../header/header';
+@import '../footer/footer';

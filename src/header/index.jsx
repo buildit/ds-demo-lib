@@ -1,5 +1,4 @@
 import React from 'react';
-import './header.less';
 import {Button} from '..';
 import logo from '../assets/unicorn_inc.png';
 

@@ -1,0 +1,86 @@
+
+* {
+  /* Box model */
+  box-sizing: border-box;
+}
+
+body {
+  /* Box model */
+  margin: 0;
+  padding: 0;
+
+  /* Typography */
+  color: @udf-color-fg;
+  font-family: @udf-body-font-family;
+  font-weight: @udf-body-font-weight;
+  font-size: @udf-body-font-size;
+
+  /* Visual */
+  background-color: @udf-color-bg;
+}
+
+
+// Inline hyperlinks
+a {
+  color: @udf-color-link;
+
+  &:hover {
+    color: @udf-color-link-hover;
+  }
+
+  &:focus {
+    color: @udf-color-link-focus;
+  }
+
+  &:active {
+    color: @udf-color-link-active;
+  }
+
+  &:visited {
+    color: @udf-color-link-visited;
+  }
+}
+
+// Images
+img {
+  /* Box model */
+  display: block;
+  width: 100%;
+}
+
+
+// Block text
+p,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure {
+  /* Box model */
+  margin: @udf-space-stack-md;
+}
+
+
+h1 {
+  /* Box model */
+  margin: @udf-space-stack-md;
+
+  /* Typography */
+  font-family: @udf-h1-font-family;
+  font-weight: @udf-h1-font-weight;
+  font-size: @udf-h1-font-size;
+}
+
+h2 {
+  /* Box model */
+  margin: @udf-space-stack-md;
+
+  /* Typography */
+  font-family: @udf-h2-font-family;
+  font-weight: @udf-h2-font-weight;
+  font-size: @udf-h2-font-size;
+}
+
