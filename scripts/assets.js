@@ -26,10 +26,9 @@ download(brandai.logos).then(data => {
     fs.unlinkSync(out);
   });
   log(chalk.green.dim('Done downloading logos'));
-})
-.then(() => {
+
   log(chalk.white('Copying brand.ai assets'));
-  fs.createReadStream(`${brandaiDir}/styles.less`).pipe(fs.createWriteStream(`${targetDir}/styles.less`));
+  fs.createReadStream(`${brandaiDir}/unicorn_inc.png`).pipe(fs.createWriteStream(`${targetDir}/unicorn_inc.png`));
 });
 
 download(brandai.styles).then(data => {
@@ -39,7 +38,7 @@ download(brandai.styles).then(data => {
 })
 .then(() => {
   log(chalk.white('Copying brand.ai styles'));
-  fs.createReadStream(`${brandaiDir}/unicorn_inc.png`).pipe(fs.createWriteStream(`${targetDir}/unicorn_inc.png`));
+  fs.createReadStream(`${brandaiDir}/styles.less`).pipe(fs.createWriteStream(`${targetDir}/styles.less`));
 });
 
 // Frontify download
