@@ -1,10 +1,10 @@
-@import '../base';
 
 header.ds-demo-header {
-  padding: @sizing-padding-small 0;
+  /* Typography */
+  color: @udf-color-fg-inverted;
 
-  color: @color-inverted-fg;
-  background-color: @color-inverted-bg;
+  /* Visual */
+  background-color: @udf-color-bg-inverted;
 
   > div {
     .content-wrapper();
@@ -28,6 +28,7 @@ header.ds-demo-header {
     .content-wrapper();
 
     ul {
+      /* Box model */
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -35,10 +36,11 @@ header.ds-demo-header {
     }
 
     li {
+      /* Box model */
       flex-grow: 1;
       flex-basis: 0;
       list-style-type: none;
-      margin: @spacing-margin-small @spacing-margin-small 0 @spacing-margin-small;
+      margin: @udf-space-sm @udf-space-sm 0 @udf-space-sm;
     }
 
     a {

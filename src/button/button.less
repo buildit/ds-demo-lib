@@ -12,12 +12,12 @@ input[type=button],
 
   /* Visual */
   background-color: @udf-color-default-bg;
-  border: @udf-input-border-width solid @udf-color-default-border;
+  border: @udf-input-border-width solid;
+  border-color: @udf-color-default-border;
   border-radius: @udf-input-border-radius;
 
   -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none;
 
   &:hover {
     /* Typography */
@@ -55,8 +55,8 @@ a.btn {
   text-decoration: none;
 
   &:visited {
-    color: @udf-color-link-visited;
-    border-color: @udf-color-link-visited;
-    background-color: inherit;
+    color: @udf-color-default-fg;
+    border-color: @udf-color-default-border;
+    background-color: @udf-color-default-bg;
   }
 }

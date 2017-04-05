@@ -3,6 +3,7 @@ import { configure, setAddon, addDecorator } from '@kadira/storybook';
 import { withKnobs } from '@kadira/storybook-addon-knobs';
 import { withComments } from '@buildit/storybook-addon-blabbr';
 import InfoAddon from '@buildit/storybook-addon-info';
+import '../src/vanilla.less';
 
 setAddon(InfoAddon);
 

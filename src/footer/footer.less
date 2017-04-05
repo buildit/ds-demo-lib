@@ -1,10 +1,13 @@
-@import '../base';
 
 .ds-demo-footer {
-  padding: @sizing-padding-medium 0 @sizing-padding-small;
+  /* Box model */
+  padding: @udf-space-inset-md;
 
-  color: @color-inverted-fg;
-  background-color: @color-inverted-bg;
+  /* Typography */
+  color: @udf-color-fg-inverted;
+
+  /* Visual */
+  background-color: @udf-color-bg-inverted;
 
   > div {
     .content-wrapper();
@@ -14,32 +17,27 @@
   p,
   ul {
     .grid-element(12);
-    margin-bottom: @spacing-margin-small;
   }
 
-  ul {
-    padding: 0;
-  }
 
   li {
     list-style-type: none;
     display: inline;
-    padding: 0;
 
     li + li:before {
       display: inline-block;
-      margin-left: 0.5em;
-      margin-right: 0.5em;
+      margin-left: @udf-space-sm;
+      margin-right: @udf-space-sm;
       content: '|';
     }
   }
 
 
-  a {
-    color: @color-inverted-link;
-
-    &:visited {
-      color: @color-inverted-link-visited;
-    }
-  }
+  //a {
+  //  color: @color-inverted-link;
+  //
+  //  &:visited {
+  //    color: @color-inverted-link-visited;
+  //  }
+  //}
 }
