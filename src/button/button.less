@@ -1,4 +1,21 @@
 
+
+// Pseudo-button specific stuff
+.btn {
+  /* Box model */
+  display: inline-block;
+
+  /* Typography */
+  text-decoration: none;
+
+  &:visited {
+    /* Typography */
+    color: @udf-color-default-fg;
+  }
+}
+
+
+// Shared properties across all buttons (and pseudo-buttons)
 button,
 input[type=button],
 .btn {
@@ -9,6 +26,7 @@ input[type=button],
   color: @udf-color-default-fg;
   font-size: inherit;
   font-family: inherit;
+  text-align: center;
 
   /* Visual */
   background-color: @udf-color-default-bg;
@@ -47,16 +65,17 @@ input[type=button],
   }
 }
 
-.btn {
-  display: inline-block;
-}
 
-a.btn {
-  text-decoration: none;
+// Real button specific stuff
+button,
+input[type=button] {
+  &:disabled {
+    /* Typography */
+    color: @udf-color-default-disabled-fg;
 
-  &:visited {
-    color: @udf-color-default-fg;
-    border-color: @udf-color-default-border;
-    background-color: @udf-color-default-bg;
+    /* Visual */
+    background-color: @udf-color-default-disabled-bg;
+    border-color: @udf-color-default-disabled-border;
   }
 }
+

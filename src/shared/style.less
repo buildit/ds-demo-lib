@@ -27,7 +27,7 @@
 @udf-color-default-border: inherit; // same as fg colour!
 
 @udf-color-default-hover-fg: @udf-color-link-hover;
-@udf-color-default-hover-bg: inherit; // same as normal state
+@udf-color-default-hover-bg: @udf-color-bg; // same as normal state
 @udf-color-default-hover-border: inherit; // same as fg colour!
 
 @udf-color-default-focus-fg: @udf-color-default-hover-fg;
@@ -35,8 +35,12 @@
 @udf-color-default-focus-border: @udf-color-default-hover-border;
 
 @udf-color-default-active-fg: @udf-color-link-active;
-@udf-color-default-active-bg: inherit;
+@udf-color-default-active-bg: @udf-color-bg; // same as normal state
 @udf-color-default-active-border: inherit; // same as fg colour!
+
+@udf-color-default-disabled-fg: desaturate(lighten(@udf-color-default-fg, 5%), 80%);
+@udf-color-default-disabled-bg: desaturate(darken(@udf-color-default-bg, 5%), 80%);
+@udf-color-default-disabled-border: inherit; // same as fg colour!
 
 
 // ###### SPACE #######

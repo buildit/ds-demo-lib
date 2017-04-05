@@ -1,7 +1,7 @@
 
 .ds-demo-footer {
   /* Box model */
-  padding: @udf-space-inset-md;
+  padding: @udf-space-inset-md 0;
 
   /* Typography */
   color: @udf-color-fg-inverted;
@@ -21,15 +21,25 @@
 
 
   li {
+    /* Box model */
     list-style-type: none;
     display: inline;
 
-    li + li:before {
+
+    & + li:before {
+      /* Box model */
       display: inline-block;
       margin-left: @udf-space-sm;
       margin-right: @udf-space-sm;
+
+      /* Misc */
       content: '|';
     }
+  }
+
+  ul {
+    /* Box model */
+    margin-bottom: 0;
   }
 
 
