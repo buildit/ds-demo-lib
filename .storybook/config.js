@@ -4,7 +4,7 @@ import { withKnobs } from '@kadira/storybook-addon-knobs';
 import { withComments } from '@buildit/storybook-addon-blabbr';
 import InfoAddon from '@buildit/storybook-addon-info';
 //import '../src/vanilla.less';
-import '../src/brand-1.less';
+import '../src/unicorn-inc.less';
 
 setAddon(InfoAddon);
 
