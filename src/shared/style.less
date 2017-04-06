@@ -21,6 +21,13 @@
 @udf-color-link-active: darken(@udf-color-link, 30%);
 @udf-color-link-visited: #a0e;
 
+// Default inverted text link colours
+@udf-color-link-inverted: #99f;
+@udf-color-link-inverted-hover: lighten(@udf-color-link-inverted, 10%);
+@udf-color-link-inverted-focus: @udf-color-link-inverted-hover;
+@udf-color-link-inverted-active: darken(@udf-color-link-inverted, 10%);
+@udf-color-link-inverted-visited: #e4f;
+
 // Default colours for default interactive elements (e.g. default buttons)
 @udf-color-default-fg: @udf-color-link;
 @udf-color-default-bg: @udf-color-bg;
@@ -110,6 +117,7 @@
 // ============  IMPORT MIX-INS AND BASE STYLES ===============================
 
 @import 'mixins/grid';
+@import 'mixins/inverted';
 @import 'base/normalise';
 
 // ============  IMPORT COMPONENT STYLES ======================================
