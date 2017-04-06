@@ -9,7 +9,7 @@
     "build-storybook": "build-storybook",
     "transpile": "babel ./src --out-dir dist --copy-files",
     "prepublish": "npm run assets && npm run transpile",
-    "assets": "node ./scripts/assets"
+    "assets": "gulp assets"
   },
   "repository": {
     "type": "git",
@@ -42,10 +42,13 @@
     "babel-preset-es2015": "^6.22.0",
     "babel-preset-react": "^6.23.0",
     "babel-preset-stage-2": "^6.22.0",
-    "chalk": "^1.1.3",
     "css-loader": "^0.26.1",
-    "download": "^5.0.3",
-    "extract-zip": "^1.6.0",
+    "gulp": "^3.9.1",
+    "gulp-decompress": "^2.0.1",
+    "gulp-download": "0.0.1",
+    "gulp-filter": "^5.0.0",
+    "gulp-less": "^3.3.0",
+    "gulp-rename": "^1.2.2",
     "less": "^2.7.2",
     "less-loader": "^2.2.3",
     "raw-loader": "^0.5.1",

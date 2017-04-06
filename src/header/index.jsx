@@ -1,6 +1,6 @@
 import React from 'react';
 import {Button} from '..';
-import logo from '../assets/unicorn_inc.png';
+import logo from '../assets/brandai/unicorn_inc.png';
 
 const Header = (props) => {
   return (
