@@ -18,112 +18,112 @@
 // ###### COLOURS #######
 
 // Default foreground colour (e.g. for text)
-@udf-color-fg: @color-midnight;
+@dsdemo-color-fg: @color-midnight;
 
 // Default background color (e.g. for page background)
-@udf-color-bg: @color-off-white;
+@dsdemo-color-bg: @color-off-white;
 
 // Default inverted foreground colour
-//@udf-color-fg-inverted: @udf-color-bg;
+//@dsdemo-color-fg-inverted: @dsdemo-color-bg;
 
 // Default inverted background colour
-@udf-color-bg-inverted: @color-some-familiar-green;
+@dsdemo-color-bg-inverted: @color-some-familiar-green;
 
 // Default text link colours
-@udf-color-link: @color-pink;
-@udf-color-link-hover: lighten(@udf-color-link, 20%);
-//@udf-color-link-focus: @udf-color-link-hover;
-@udf-color-link-active: darken(@udf-color-link, 10%);
-@udf-color-link-visited: @udf-color-link;
+@dsdemo-color-link: @color-pink;
+@dsdemo-color-link-hover: lighten(@dsdemo-color-link, 20%);
+//@dsdemo-color-link-focus: @dsdemo-color-link-hover;
+@dsdemo-color-link-active: darken(@dsdemo-color-link, 10%);
+@dsdemo-color-link-visited: @dsdemo-color-link;
 
 // Default inverted text link colours
-@udf-color-link-inverted: @color-pale-pink;
-//@udf-color-link-inverted-hover: lighten(@udf-color-link-inverted, 10%);
-//@udf-color-link-inverted-focus: @udf-color-link-inverted-hover;
-//@udf-color-link-inverted-active: darken(@udf-color-link-inverted, 10%);
-@udf-color-link-inverted-visited: @udf-color-link-inverted;
+@dsdemo-color-link-inverted: @color-pale-pink;
+//@dsdemo-color-link-inverted-hover: lighten(@dsdemo-color-link-inverted, 10%);
+//@dsdemo-color-link-inverted-focus: @dsdemo-color-link-inverted-hover;
+//@dsdemo-color-link-inverted-active: darken(@dsdemo-color-link-inverted, 10%);
+@dsdemo-color-link-inverted-visited: @dsdemo-color-link-inverted;
 
 // Default colours for default interactive elements (e.g. default buttons)
-@udf-color-default-fg: @udf-color-fg-inverted;
-@udf-color-default-bg: @udf-color-link;
-@udf-color-default-border: @udf-color-link;
+@dsdemo-color-default-fg: @dsdemo-color-fg-inverted;
+@dsdemo-color-default-bg: @dsdemo-color-link;
+@dsdemo-color-default-border: @dsdemo-color-link;
 
-@udf-color-default-hover-fg: @udf-color-fg-inverted;
-@udf-color-default-hover-bg: @udf-color-link-hover;
-@udf-color-default-hover-border: @udf-color-link-hover;
+@dsdemo-color-default-hover-fg: @dsdemo-color-fg-inverted;
+@dsdemo-color-default-hover-bg: @dsdemo-color-link-hover;
+@dsdemo-color-default-hover-border: @dsdemo-color-link-hover;
 
-//@udf-color-default-focus-fg: @udf-color-default-hover-fg;
-//@udf-color-default-focus-bg: @udf-color-default-hover-bg;
-//@udf-color-default-focus-border: @udf-color-default-hover-border;
+//@dsdemo-color-default-focus-fg: @dsdemo-color-default-hover-fg;
+//@dsdemo-color-default-focus-bg: @dsdemo-color-default-hover-bg;
+//@dsdemo-color-default-focus-border: @dsdemo-color-default-hover-border;
 
-@udf-color-default-active-fg: @udf-color-fg-inverted;
-@udf-color-default-active-bg: @udf-color-link-active;
-@udf-color-default-active-border: @udf-color-link-active;
+@dsdemo-color-default-active-fg: @dsdemo-color-fg-inverted;
+@dsdemo-color-default-active-bg: @dsdemo-color-link-active;
+@dsdemo-color-default-active-border: @dsdemo-color-link-active;
 
-//@udf-color-default-disabled-fg: desaturate(lighten(@udf-color-default-fg, 5%), 80%);
-//@udf-color-default-disabled-bg: desaturate(darken(@udf-color-default-bg, 5%), 80%);
-//@udf-color-default-disabled-border: inherit;
+//@dsdemo-color-default-disabled-fg: desaturate(lighten(@dsdemo-color-default-fg, 5%), 80%);
+//@dsdemo-color-default-disabled-bg: desaturate(darken(@dsdemo-color-default-bg, 5%), 80%);
+//@dsdemo-color-default-disabled-border: inherit;
 
 
 // ###### SPACE #######
 // Inspired by https://medium.com/eightshapes-llc/space-in-design-systems-188bcbae0d62
 
 // Define basic spacing - can also use these for horizontal gaps between inline elements
-//@udf-space-xs: @udf-space-sm / 2;
-//@udf-space-sm: @udf-space-md / 2;
-@udf-space-md: @sizing-padding-small;
-@udf-space-lg: @sizing-padding-medium;
-//@udf-space-xl: 2 * @udf-space-lg;
+//@dsdemo-space-xs: @dsdemo-space-sm / 2;
+//@dsdemo-space-sm: @dsdemo-space-md / 2;
+@dsdemo-space-md: @sizing-padding-small;
+@dsdemo-space-lg: @sizing-padding-medium;
+//@dsdemo-space-xl: 2 * @dsdemo-space-lg;
 
 // Derive some insets - use for padding (or equivalent)
-//@udf-space-inset-xs: @udf-space-xs;
-//@udf-space-inset-sm: @udf-space-sm;
-//@udf-space-inset-md: @udf-space-md;
-//@udf-space-inset-lg: @udf-space-lg;
-//@udf-space-inset-xl: @udf-space-xl;
+//@dsdemo-space-inset-xs: @dsdemo-space-xs;
+//@dsdemo-space-inset-sm: @dsdemo-space-sm;
+//@dsdemo-space-inset-md: @dsdemo-space-md;
+//@dsdemo-space-inset-lg: @dsdemo-space-lg;
+//@dsdemo-space-inset-xl: @dsdemo-space-xl;
 
-//@udf-space-inset-squish-sm: @udf-space-xs @udf-space-sm;
-//@udf-space-inset-squish-md: @udf-space-sm @udf-space-md;
-//@udf-space-inset-squish-lg: @udf-space-md @udf-space-lg;
+//@dsdemo-space-inset-squish-sm: @dsdemo-space-xs @dsdemo-space-sm;
+//@dsdemo-space-inset-squish-md: @dsdemo-space-sm @dsdemo-space-md;
+//@dsdemo-space-inset-squish-lg: @dsdemo-space-md @dsdemo-space-lg;
 
 // Derive some stacking spaces - use for margins (or equivalent)
-@udf-space-stack-xs: 0 0 (@spacing-margin-small / 4) 0;
-@udf-space-stack-sm: 0 0 (@spacing-margin-small / 2) 0;
-@udf-space-stack-md: 0 0 @spacing-margin-small 0;
-@udf-space-stack-lg: 0 0 @spacing-margin-medium 0;
-@udf-space-stack-xl: 0 0 (2 * @spacing-margin-medium) 0;
+@dsdemo-space-stack-xs: 0 0 (@spacing-margin-small / 4) 0;
+@dsdemo-space-stack-sm: 0 0 (@spacing-margin-small / 2) 0;
+@dsdemo-space-stack-md: 0 0 @spacing-margin-small 0;
+@dsdemo-space-stack-lg: 0 0 @spacing-margin-medium 0;
+@dsdemo-space-stack-xl: 0 0 (2 * @spacing-margin-medium) 0;
 
 
 // ###### GRID #######
 
-//@udf-grid-cols: 12;
-//@udf-grid-gutter-width: @udf-space-lg;
+//@dsdemo-grid-cols: 12;
+//@dsdemo-grid-gutter-width: @dsdemo-space-lg;
 
 
 // ###### BREAKPOINTS #######
 
-//@udf-breakpoint: 40rem;
+//@dsdemo-breakpoint: 40rem;
 
 
 // ###### TYPOGRAPHY #######
 
-@udf-body-font-family: @font-body-text-font-family;
-@udf-body-font-weight: @font-body-text-font-weight;
-@udf-body-font-size: @font-body-text-font-size;
-@udf-body-line-height: @font-body-text-line-height;
+@dsdemo-body-font-family: @font-body-text-font-family;
+@dsdemo-body-font-weight: @font-body-text-font-weight;
+@dsdemo-body-font-size: @font-body-text-font-size;
+@dsdemo-body-line-height: @font-body-text-line-height;
 
-@udf-h1-font-family: @font-heading-level-1-font-family;
-@udf-h1-font-weight: @font-heading-level-1-font-weight;
-@udf-h1-font-size: @font-heading-level-1-font-size;
-@udf-h1-line-height: @font-heading-level-1-line-height;
+@dsdemo-h1-font-family: @font-heading-level-1-font-family;
+@dsdemo-h1-font-weight: @font-heading-level-1-font-weight;
+@dsdemo-h1-font-size: @font-heading-level-1-font-size;
+@dsdemo-h1-line-height: @font-heading-level-1-line-height;
 
-@udf-h2-font-family: @font-heading-level-2-font-family;
-@udf-h2-font-weight: @font-heading-level-2-font-weight;
-@udf-h2-font-size: @font-heading-level-2-font-size;
-@udf-h2-line-height: @font-heading-level-2-line-height;
+@dsdemo-h2-font-family: @font-heading-level-2-font-family;
+@dsdemo-h2-font-weight: @font-heading-level-2-font-weight;
+@dsdemo-h2-font-size: @font-heading-level-2-font-size;
+@dsdemo-h2-line-height: @font-heading-level-2-line-height;
 
 
 // ###### INPUTS #######
 
-@udf-input-border-width: 0;
-//@udf-input-border-radius: 0;
+@dsdemo-input-border-width: 0;
+//@dsdemo-input-border-radius: 0;

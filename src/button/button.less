@@ -1,7 +1,7 @@
 
 
 // Pseudo-button specific stuff
-.btn {
+.dsdemo-btn {
   /* Box model */
   display: inline-block;
 
@@ -10,7 +10,7 @@
 
   &:visited {
     /* Typography */
-    color: @udf-color-default-fg;
+    color: @dsdemo-color-default-fg;
   }
 }
 
@@ -18,50 +18,50 @@
 // Shared properties across all buttons (and pseudo-buttons)
 button,
 input[type=button],
-.btn {
+.dsdemo-btn {
   /* Box model */
-  padding: @udf-space-inset-squish-md;
+  padding: @dsdemo-space-inset-squish-md;
 
   /* Typography */
-  color: @udf-color-default-fg;
+  color: @dsdemo-color-default-fg;
   font-size: inherit;
   font-family: inherit;
   text-align: center;
 
   /* Visual */
-  background-color: @udf-color-default-bg;
-  border: @udf-input-border-width solid;
-  border-color: @udf-color-default-border;
-  border-radius: @udf-input-border-radius;
+  background-color: @dsdemo-color-default-bg;
+  border: @dsdemo-input-border-width solid;
+  border-color: @dsdemo-color-default-border;
+  border-radius: @dsdemo-input-border-radius;
 
   -webkit-appearance: none;
   -moz-appearance: none;
 
   &:hover {
     /* Typography */
-    color: @udf-color-default-hover-fg;
+    color: @dsdemo-color-default-hover-fg;
 
     /* Visual */
-    background-color: @udf-color-default-hover-bg;
-    border-color: @udf-color-default-hover-border;
+    background-color: @dsdemo-color-default-hover-bg;
+    border-color: @dsdemo-color-default-hover-border;
   }
 
   &:focus {
     /* Typography */
-    color: @udf-color-default-focus-fg;
+    color: @dsdemo-color-default-focus-fg;
 
     /* Visual */
-    background-color: @udf-color-default-focus-bg;
-    border-color: @udf-color-default-focus-border;
+    background-color: @dsdemo-color-default-focus-bg;
+    border-color: @dsdemo-color-default-focus-border;
   }
 
   &:active {
     /* Typography */
-    color: @udf-color-default-active-fg;
+    color: @dsdemo-color-default-active-fg;
 
     /* Visual */
-    background-color: @udf-color-default-active-bg;
-    border-color: @udf-color-default-active-border;
+    background-color: @dsdemo-color-default-active-bg;
+    border-color: @dsdemo-color-default-active-border;
   }
 }
 
@@ -71,11 +71,11 @@ button,
 input[type=button] {
   &:disabled {
     /* Typography */
-    color: @udf-color-default-disabled-fg;
+    color: @dsdemo-color-default-disabled-fg;
 
     /* Visual */
-    background-color: @udf-color-default-disabled-bg;
-    border-color: @udf-color-default-disabled-border;
+    background-color: @dsdemo-color-default-disabled-bg;
+    border-color: @dsdemo-color-default-disabled-border;
   }
 }
 

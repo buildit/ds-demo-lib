@@ -4,7 +4,7 @@ import logo from '../assets/unicorn_inc.png';
 
 const Header = (props) => {
   return (
-    <header className="ds-demo-header">
+    <header className="dsdemo-header">
       <div>
         <div className="logo">
           <img src={logo} alt="Unicorn Inc"/>

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = (props) => {
   return (
-    <footer className="ds-demo-footer">
+    <footer className="dsdemo-footer">
       <div>
         <p>&copy; 2017 Unicorn Inc. All rights reserved.</p>
         <nav>

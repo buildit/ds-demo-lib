@@ -23,14 +23,14 @@
 
 
 .grid-element(@cols) {
-  @half-gutter: @udf-grid-gutter-width / 2;
+  @half-gutter: @dsdemo-grid-gutter-width / 2;
 
   margin-left: @half-gutter;
   margin-right: @half-gutter;
-  width: ~'calc( 100% - @{udf-grid-gutter-width} )';
+  width: ~'calc( 100% - @{dsdemo-grid-gutter-width} )';
 
-  @media (min-width: @udf-breakpoint) {
+  @media (min-width: @dsdemo-breakpoint) {
     float: left;
-    width: ~'calc( (100% / @{udf-grid-cols} * @{cols}) - @{udf-grid-gutter-width} )';
+    width: ~'calc( (100% / @{dsdemo-grid-cols} * @{cols}) - @{dsdemo-grid-gutter-width} )';
   }
 }
