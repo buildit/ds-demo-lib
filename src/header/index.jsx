@@ -1,11 +1,10 @@
 import React from 'react';
-import './header.less';
 import {Button} from '..';
-import logo from '../assets/unicorn_inc.png';
+import logo from '../assets/brandai/unicorn_inc.png';
 
 const Header = (props) => {
   return (
-    <header className="ds-demo-header">
+    <header className="dsdemo-header">
       <div>
         <div className="logo">
           <img src={logo} alt="Unicorn Inc"/>

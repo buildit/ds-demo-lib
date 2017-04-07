@@ -1,35 +1,78 @@
-@import '../colors';
-
-button,
-input[type=button],
-.btn {
-  padding: (@sizing-padding-small / 2) @sizing-padding-small;
-  color: @btn-color-fg;
-  border-radius: 0px;
-  background-color: @btn-color-bg;
-  font-size: inherit;
-
-  border: none;
-
-  -webkit-appearance: none;
-  appearance: none;
-
-
-  &:hover {
-    color: @btn-color-bg;
-    background-color: @btn-color-fg;
-  }
-}
-
-.btn {
+// Pseudo-button specific stuff
+.dsdemo-btn {
+  /* Box model */
   display: inline-block;
-}
 
-a.btn {
+  /* Typography */
   text-decoration: none;
 
   &:visited {
-    color: @btn-color-fg;
-    background-color: @btn-color-bg;
+    /* Typography */
+    color: @dsdemo-color-default-fg;
+  }
+}
+
+
+// Shared properties across all buttons (and pseudo-buttons)
+button,
+input[type=button],
+.dsdemo-btn {
+  /* Box model */
+  padding: @dsdemo-space-inset-squish-md;
+
+  /* Typography */
+  color: @dsdemo-color-default-fg;
+  font-size: inherit;
+  font-family: inherit;
+  text-align: center;
+
+  /* Visual */
+  background-color: @dsdemo-color-default-bg;
+  border: @dsdemo-input-border-width solid;
+  border-color: @dsdemo-color-default-border;
+  border-radius: @dsdemo-input-border-radius;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  &:hover {
+    /* Typography */
+    color: @dsdemo-color-default-hover-fg;
+
+    /* Visual */
+    background-color: @dsdemo-color-default-hover-bg;
+    border-color: @dsdemo-color-default-hover-border;
+  }
+
+  &:focus {
+    /* Typography */
+    color: @dsdemo-color-default-focus-fg;
+
+    /* Visual */
+    background-color: @dsdemo-color-default-focus-bg;
+    border-color: @dsdemo-color-default-focus-border;
+  }
+
+  &:active {
+    /* Typography */
+    color: @dsdemo-color-default-active-fg;
+
+    /* Visual */
+    background-color: @dsdemo-color-default-active-bg;
+    border-color: @dsdemo-color-default-active-border;
+  }
+}
+
+
+// Real button specific stuff
+button,
+input[type=button] {
+  &:disabled {
+    /* Typography */
+    color: @dsdemo-color-default-disabled-fg;
+
+    /* Visual */
+    background-color: @dsdemo-color-default-disabled-bg;
+    border-color: @dsdemo-color-default-disabled-border;
   }
 }

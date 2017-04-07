@@ -1,9 +1,8 @@
 import React from 'react';
-import './button.less';
 
 const Button = (props) => {
   return (
-    <a className="btn" href={props.href}>{props.children}</a>
+    <a className="dsdemo-btn" href={props.href}>{props.children}</a>
   )
 };
 
