@@ -8,7 +8,7 @@
     "storybook": "start-storybook -p 9000",
     "build-storybook": "build-storybook",
     "transpile": "babel ./src --out-dir dist --copy-files",
-    "prepublish": "npm run assets && npm run transpile",
+    "prepublish": "npm run transpile",
     "assets": "gulp assets"
   },
   "repository": {
