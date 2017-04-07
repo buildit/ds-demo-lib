@@ -1,6 +1,5 @@
 // Poor man's grid system
 
-
 // Mixins
 .content-wrapper() {
   margin-left: auto;
@@ -9,9 +8,7 @@
   max-width: 1000px;
 }
 
-
 .grid-container() {
-
   // Clearfix
   &:after {
     display: block;
@@ -19,8 +16,6 @@
     clear: both;
   }
 }
-
-
 
 .grid-element(@cols) {
   @half-gutter: @dsdemo-grid-gutter-width / 2;
