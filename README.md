@@ -8,6 +8,10 @@ This is a demo of how integration with tools like [Frontify](http://frontify.com
 - [ds-demo-app2](http://github.com/buildit/ds-demo-app2): a second React app, consuming the common library. This has a simple form to make a "payment" of some sort.
 - [ds-demo-web](http://github.com/buildit/ds-demo-web): a static HTML site which consumes the styles available in the library.
 
+Here's what the flow looks like:
+
+![Design System demo components](docs/ds-demo-diagram.png)
+
 ## What am I looking at
 
 The common library has three components:
