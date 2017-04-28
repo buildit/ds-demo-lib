@@ -4,8 +4,8 @@ import { withKnobs } from '@kadira/storybook-addon-knobs';
 import { withComments } from '@buildit/storybook-addon-blabbr';
 import InfoAddon from '@buildit/storybook-addon-info';
 // import '../src/vanilla.less';
-// import '../src/unicorn-inc.less';
-import '../src/taco-bank.less';
+import '../src/unicorn-inc.less';
+// import '../src/taco-bank.less';
 
 setAddon(InfoAddon);
 

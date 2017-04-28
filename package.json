@@ -3,13 +3,17 @@
   "version": "0.0.1",
   "description": "Design System Demo UI Library.",
   "main": "dist/index.js",
+  "module": "src/index.js",
   "scripts": {
     "start": "npm run storybook",
     "storybook": "start-storybook -p 9000",
     "build-storybook": "build-storybook",
     "transpile": "babel ./src --out-dir dist --copy-files",
-    "prepublish": "npm run transpile",
-    "assets": "gulp assets"
+    "prepublish": "npm run transpile && npm run build:prod",
+    "assets": "gulp assets",
+    "build": "webpack --config webpack.config.js",
+    "build:prod": "webpack --config webpack.config.js -p",
+    "clean": "rm -fr dist"
   },
   "repository": {
     "type": "git",
@@ -53,6 +57,7 @@
     "less-loader": "^2.2.3",
     "raw-loader": "^0.5.1",
     "style-loader": "^0.13.1",
-    "url-loader": "^0.5.7"
+    "url-loader": "^0.5.8",
+    "webpack": "^2.4.1"
   }
 }
