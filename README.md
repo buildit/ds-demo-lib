@@ -3,10 +3,10 @@
 ## What is this?
 
 This is a demo of how integration with tools like [Frontify](http://frontify.com) or [Brand.ai](http://brand.ai/) can automate some parts of the workflow when it comes to building web apps. The demo consists of four repositories:
-- [ds-demo-lib](http://github.com/buildit/ds-demo-lib): this is a React library of common components
-- [ds-demo-app1](http://github.com/buildit/ds-demo-app1): a consumer app of the above library. This pretends to be some kind of banking app where a table of data is shown.
-- [ds-demo-app2](http://github.com/buildit/ds-demo-app2): a second React app, consuming the common library. This has a simple form to make a "payment" of some sort.
-- [ds-demo-web](http://github.com/buildit/ds-demo-web): a static HTML site which consumes the styles available in the library.
+- [ds-demo-lib](https://github.com/buildit/ds-demo/packages/ds-demo-lib): this is a React library of common components
+- [ds-demo-app1](https://github.com/buildit/ds-demo/packages/ds-demo-app1): a consumer app of the above library. This pretends to be some kind of banking app where a table of data is shown.
+- [ds-demo-app2](https://github.com/buildit/ds-demo/packages/ds-demo-app2): a second React app, consuming the common library. This has a simple form to make a "payment" of some sort.
+- [ds-demo-web](https://github.com/buildit/ds-demo/packages/ds-demo-web): a static HTML site which consumes the styles available in the library.
 
 Here's what the flow looks like:
 
