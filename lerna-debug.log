@@ -1,0 +1,918 @@
+0 silly input [ 'bootstrap' ]
+1 silly flags { _: [ 'bootstrap' ], sort: true, concurrency: 4 }
+2 verbose rootPath /Users/panos/git/buildit/ds-demo-lib
+3 info version 2.0.0-rc.4
+4 silly isInitialized
+5 silly isInitialized true
+6 silly existsSync /Users/panos/git/buildit/ds-demo-lib/VERSION
+7 silly initialize attempt
+8 silly initialize success
+9 silly execute attempt
+10 info Bootstrapping 4 packages
+11 info lifecycle preinstall
+12 silly runScript preinstall @buildit/ds-demo-app1
+13 silly @buildit/ds-demo-app1
+14 silly runScript preinstall @buildit/ds-demo-app2
+15 silly @buildit/ds-demo-app2
+16 silly runScript preinstall @buildit/ds-demo-lib
+17 silly @buildit/ds-demo-lib
+18 silly runScript preinstall ds-demo-web
+19 silly ds-demo-web
+20 silly hasDependencyInstalled @buildit/ds-demo-app1 babel-core
+21 silly dependencyIsSatisfied [ 'babel-core',
+21 silly dependencyIsSatisfied   '~5.8.33',
+21 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-app1/node_modules' ]
+22 verbose dependencyIsSatisfied babel-core false
+23 silly hasDependencyInstalled @buildit/ds-demo-app2 babel-core
+24 silly dependencyIsSatisfied [ 'babel-core',
+24 silly dependencyIsSatisfied   '~5.8.33',
+24 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-app2/node_modules' ]
+25 verbose dependencyIsSatisfied babel-core false
+26 silly hasDependencyInstalled @buildit/ds-demo-app1 babel-eslint
+27 silly dependencyIsSatisfied [ 'babel-eslint',
+27 silly dependencyIsSatisfied   '~4.1.3',
+27 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-app1/node_modules' ]
+28 verbose dependencyIsSatisfied babel-eslint false
+29 silly hasDependencyInstalled @buildit/ds-demo-app2 babel-eslint
+30 silly dependencyIsSatisfied [ 'babel-eslint',
+30 silly dependencyIsSatisfied   '~4.1.3',
+30 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-app2/node_modules' ]
+31 verbose dependencyIsSatisfied babel-eslint false
+32 silly hasDependencyInstalled @buildit/ds-demo-app1 babel-loader
+33 silly dependencyIsSatisfied [ 'babel-loader',
+33 silly dependencyIsSatisfied   '~5.3.3',
+33 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-app1/node_modules' ]
+34 verbose dependencyIsSatisfied babel-loader false
+35 silly hasDependencyInstalled @buildit/ds-demo-app2 babel-loader
+36 silly dependencyIsSatisfied [ 'babel-loader',
+36 silly dependencyIsSatisfied   '~5.3.3',
+36 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-app2/node_modules' ]
+37 verbose dependencyIsSatisfied babel-loader false
+38 silly hasDependencyInstalled @buildit/ds-demo-lib babel-loader
+39 silly dependencyIsSatisfied [ 'babel-loader',
+39 silly dependencyIsSatisfied   '^6.3.2',
+39 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-lib/node_modules' ]
+40 verbose dependencyIsSatisfied babel-loader false
+41 silly hasDependencyInstalled @buildit/ds-demo-app1 css-loader
+42 silly dependencyIsSatisfied [ 'css-loader',
+42 silly dependencyIsSatisfied   '^0.20.2',
+42 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-app1/node_modules' ]
+43 verbose dependencyIsSatisfied css-loader false
+44 silly hasDependencyInstalled @buildit/ds-demo-app2 css-loader
+45 silly dependencyIsSatisfied [ 'css-loader',
+45 silly dependencyIsSatisfied   '^0.20.2',
+45 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-app2/node_modules' ]
+46 verbose dependencyIsSatisfied css-loader false
+47 silly hasDependencyInstalled @buildit/ds-demo-lib css-loader
+48 silly dependencyIsSatisfied [ 'css-loader',
+48 silly dependencyIsSatisfied   '^0.26.1',
+48 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-lib/node_modules' ]
+49 verbose dependencyIsSatisfied css-loader false
+50 silly hasDependencyInstalled @buildit/ds-demo-app1 file-loader
+51 silly dependencyIsSatisfied [ 'file-loader',
+51 silly dependencyIsSatisfied   '~0.8.4',
+51 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-app1/node_modules' ]
+52 verbose dependencyIsSatisfied file-loader false
+53 silly hasDependencyInstalled @buildit/ds-demo-app2 file-loader
+54 silly dependencyIsSatisfied [ 'file-loader',
+54 silly dependencyIsSatisfied   '~0.8.4',
+54 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-app2/node_modules' ]
+55 verbose dependencyIsSatisfied file-loader false
+56 silly hasDependencyInstalled @buildit/ds-demo-app1 html-webpack-plugin
+57 silly dependencyIsSatisfied [ 'html-webpack-plugin',
+57 silly dependencyIsSatisfied   '~1.6.2',
+57 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-app1/node_modules' ]
+58 verbose dependencyIsSatisfied html-webpack-plugin false
+59 silly hasDependencyInstalled @buildit/ds-demo-app2 html-webpack-plugin
+60 silly dependencyIsSatisfied [ 'html-webpack-plugin',
+60 silly dependencyIsSatisfied   '~1.6.2',
+60 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-app2/node_modules' ]
+61 verbose dependencyIsSatisfied html-webpack-plugin false
+62 silly hasDependencyInstalled @buildit/ds-demo-app1 less
+63 silly dependencyIsSatisfied [ 'less',
+63 silly dependencyIsSatisfied   '~2.5.3',
+63 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-app1/node_modules' ]
+64 verbose dependencyIsSatisfied less false
+65 silly hasDependencyInstalled @buildit/ds-demo-app2 less
+66 silly dependencyIsSatisfied [ 'less',
+66 silly dependencyIsSatisfied   '~2.5.3',
+66 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-app2/node_modules' ]
+67 verbose dependencyIsSatisfied less false
+68 silly hasDependencyInstalled @buildit/ds-demo-lib less
+69 silly dependencyIsSatisfied [ 'less',
+69 silly dependencyIsSatisfied   '^2.7.2',
+69 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-lib/node_modules' ]
+70 verbose dependencyIsSatisfied less false
+71 silly hasDependencyInstalled ds-demo-web less
+72 silly dependencyIsSatisfied [ 'less',
+72 silly dependencyIsSatisfied   '^2.7.2',
+72 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-web/node_modules' ]
+73 verbose dependencyIsSatisfied less false
+74 silly hasDependencyInstalled @buildit/ds-demo-app1 less-loader
+75 silly dependencyIsSatisfied [ 'less-loader',
+75 silly dependencyIsSatisfied   '^2.2.2',
+75 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-app1/node_modules' ]
+76 verbose dependencyIsSatisfied less-loader false
+77 silly hasDependencyInstalled @buildit/ds-demo-app2 less-loader
+78 silly dependencyIsSatisfied [ 'less-loader',
+78 silly dependencyIsSatisfied   '^2.2.2',
+78 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-app2/node_modules' ]
+79 verbose dependencyIsSatisfied less-loader false
+80 silly hasDependencyInstalled @buildit/ds-demo-lib less-loader
+81 silly dependencyIsSatisfied [ 'less-loader',
+81 silly dependencyIsSatisfied   '^2.2.3',
+81 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-lib/node_modules' ]
+82 verbose dependencyIsSatisfied less-loader false
+83 silly hasDependencyInstalled @buildit/ds-demo-app1 style-loader
+84 silly dependencyIsSatisfied [ 'style-loader',
+84 silly dependencyIsSatisfied   '^0.13.1',
+84 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-app1/node_modules' ]
+85 verbose dependencyIsSatisfied style-loader false
+86 silly hasDependencyInstalled @buildit/ds-demo-app2 style-loader
+87 silly dependencyIsSatisfied [ 'style-loader',
+87 silly dependencyIsSatisfied   '^0.13.1',
+87 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-app2/node_modules' ]
+88 verbose dependencyIsSatisfied style-loader false
+89 silly hasDependencyInstalled @buildit/ds-demo-lib style-loader
+90 silly dependencyIsSatisfied [ 'style-loader',
+90 silly dependencyIsSatisfied   '^0.13.1',
+90 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-lib/node_modules' ]
+91 verbose dependencyIsSatisfied style-loader false
+92 silly hasDependencyInstalled @buildit/ds-demo-app1 webpack
+93 silly dependencyIsSatisfied [ 'webpack',
+93 silly dependencyIsSatisfied   '~1.12.2',
+93 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-app1/node_modules' ]
+94 verbose dependencyIsSatisfied webpack false
+95 silly hasDependencyInstalled @buildit/ds-demo-app2 webpack
+96 silly dependencyIsSatisfied [ 'webpack',
+96 silly dependencyIsSatisfied   '~1.12.2',
+96 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-app2/node_modules' ]
+97 verbose dependencyIsSatisfied webpack false
+98 silly hasDependencyInstalled @buildit/ds-demo-lib webpack
+99 silly dependencyIsSatisfied [ 'webpack',
+99 silly dependencyIsSatisfied   '^2.4.1',
+99 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-lib/node_modules' ]
+100 verbose dependencyIsSatisfied webpack false
+101 silly hasDependencyInstalled @buildit/ds-demo-app1 webpack-dev-server
+102 silly dependencyIsSatisfied [ 'webpack-dev-server',
+102 silly dependencyIsSatisfied   '^1.14.1',
+102 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-app1/node_modules' ]
+103 verbose dependencyIsSatisfied webpack-dev-server false
+104 silly hasDependencyInstalled @buildit/ds-demo-app2 webpack-dev-server
+105 silly dependencyIsSatisfied [ 'webpack-dev-server',
+105 silly dependencyIsSatisfied   '^1.14.1',
+105 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-app2/node_modules' ]
+106 verbose dependencyIsSatisfied webpack-dev-server false
+107 silly hasDependencyInstalled @buildit/ds-demo-app1 @buildit/ds-demo-lib
+108 silly dependencyIsSatisfied [ '@buildit/ds-demo-lib',
+108 silly dependencyIsSatisfied   '../ds-demo-lib',
+108 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-app1/node_modules' ]
+109 verbose dependencyIsSatisfied @buildit/ds-demo-lib false
+110 silly hasDependencyInstalled @buildit/ds-demo-app2 @buildit/ds-demo-lib
+111 silly dependencyIsSatisfied [ '@buildit/ds-demo-lib',
+111 silly dependencyIsSatisfied   '../ds-demo-lib',
+111 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-app2/node_modules' ]
+112 verbose dependencyIsSatisfied @buildit/ds-demo-lib false
+113 silly hasDependencyInstalled ds-demo-web @buildit/ds-demo-lib
+114 silly dependencyIsSatisfied [ '@buildit/ds-demo-lib',
+114 silly dependencyIsSatisfied   '../ds-demo-lib',
+114 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-web/node_modules' ]
+115 verbose dependencyIsSatisfied @buildit/ds-demo-lib false
+116 silly hasDependencyInstalled @buildit/ds-demo-app1 moment
+117 silly dependencyIsSatisfied [ 'moment',
+117 silly dependencyIsSatisfied   '^2.17.1',
+117 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-app1/node_modules' ]
+118 verbose dependencyIsSatisfied moment false
+119 silly hasDependencyInstalled @buildit/ds-demo-app2 moment
+120 silly dependencyIsSatisfied [ 'moment',
+120 silly dependencyIsSatisfied   '^2.17.1',
+120 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-app2/node_modules' ]
+121 verbose dependencyIsSatisfied moment false
+122 silly hasDependencyInstalled @buildit/ds-demo-app1 react
+123 silly dependencyIsSatisfied [ 'react',
+123 silly dependencyIsSatisfied   '^15.4.2',
+123 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-app1/node_modules' ]
+124 verbose dependencyIsSatisfied react false
+125 silly hasDependencyInstalled @buildit/ds-demo-app2 react
+126 silly dependencyIsSatisfied [ 'react',
+126 silly dependencyIsSatisfied   '^15.4.2',
+126 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-app2/node_modules' ]
+127 verbose dependencyIsSatisfied react false
+128 silly hasDependencyInstalled @buildit/ds-demo-lib react
+129 silly dependencyIsSatisfied [ 'react',
+129 silly dependencyIsSatisfied   '^15.4.2',
+129 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-lib/node_modules' ]
+130 verbose dependencyIsSatisfied react false
+131 silly hasDependencyInstalled @buildit/ds-demo-app1 react-dom
+132 silly dependencyIsSatisfied [ 'react-dom',
+132 silly dependencyIsSatisfied   '^15.4.2',
+132 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-app1/node_modules' ]
+133 verbose dependencyIsSatisfied react-dom false
+134 silly hasDependencyInstalled @buildit/ds-demo-app2 react-dom
+135 silly dependencyIsSatisfied [ 'react-dom',
+135 silly dependencyIsSatisfied   '^15.4.2',
+135 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-app2/node_modules' ]
+136 verbose dependencyIsSatisfied react-dom false
+137 silly hasDependencyInstalled @buildit/ds-demo-lib react-dom
+138 silly dependencyIsSatisfied [ 'react-dom',
+138 silly dependencyIsSatisfied   '^15.4.2',
+138 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-lib/node_modules' ]
+139 verbose dependencyIsSatisfied react-dom false
+140 silly hasDependencyInstalled @buildit/ds-demo-lib @buildit/storybook-addon-blabbr
+141 silly dependencyIsSatisfied [ '@buildit/storybook-addon-blabbr',
+141 silly dependencyIsSatisfied   'latest',
+141 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-lib/node_modules' ]
+142 verbose dependencyIsSatisfied @buildit/storybook-addon-blabbr false
+143 silly hasDependencyInstalled @buildit/ds-demo-lib @buildit/storybook-addon-info
+144 silly dependencyIsSatisfied [ '@buildit/storybook-addon-info',
+144 silly dependencyIsSatisfied   '^3.3.0',
+144 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-lib/node_modules' ]
+145 verbose dependencyIsSatisfied @buildit/storybook-addon-info false
+146 silly hasDependencyInstalled @buildit/ds-demo-lib @kadira/storybook
+147 silly dependencyIsSatisfied [ '@kadira/storybook',
+147 silly dependencyIsSatisfied   '^2.21.0',
+147 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-lib/node_modules' ]
+148 verbose dependencyIsSatisfied @kadira/storybook false
+149 silly hasDependencyInstalled @buildit/ds-demo-lib @kadira/storybook-addon-knobs
+150 silly dependencyIsSatisfied [ '@kadira/storybook-addon-knobs',
+150 silly dependencyIsSatisfied   '^1.7.1',
+150 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-lib/node_modules' ]
+151 verbose dependencyIsSatisfied @kadira/storybook-addon-knobs false
+152 silly hasDependencyInstalled @buildit/ds-demo-lib babel-cli
+153 silly dependencyIsSatisfied [ 'babel-cli',
+153 silly dependencyIsSatisfied   '^6.23.0',
+153 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-lib/node_modules' ]
+154 verbose dependencyIsSatisfied babel-cli false
+155 silly hasDependencyInstalled @buildit/ds-demo-lib babel-preset-es2015
+156 silly dependencyIsSatisfied [ 'babel-preset-es2015',
+156 silly dependencyIsSatisfied   '^6.22.0',
+156 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-lib/node_modules' ]
+157 verbose dependencyIsSatisfied babel-preset-es2015 false
+158 silly hasDependencyInstalled @buildit/ds-demo-lib babel-preset-react
+159 silly dependencyIsSatisfied [ 'babel-preset-react',
+159 silly dependencyIsSatisfied   '^6.23.0',
+159 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-lib/node_modules' ]
+160 verbose dependencyIsSatisfied babel-preset-react false
+161 silly hasDependencyInstalled @buildit/ds-demo-lib babel-preset-stage-2
+162 silly dependencyIsSatisfied [ 'babel-preset-stage-2',
+162 silly dependencyIsSatisfied   '^6.22.0',
+162 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-lib/node_modules' ]
+163 verbose dependencyIsSatisfied babel-preset-stage-2 false
+164 silly hasDependencyInstalled @buildit/ds-demo-lib gulp
+165 silly dependencyIsSatisfied [ 'gulp',
+165 silly dependencyIsSatisfied   '^3.9.1',
+165 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-lib/node_modules' ]
+166 verbose dependencyIsSatisfied gulp false
+167 silly hasDependencyInstalled ds-demo-web gulp
+168 silly dependencyIsSatisfied [ 'gulp',
+168 silly dependencyIsSatisfied   '^3.9.1',
+168 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-web/node_modules' ]
+169 verbose dependencyIsSatisfied gulp false
+170 silly hasDependencyInstalled @buildit/ds-demo-lib gulp-clean
+171 silly dependencyIsSatisfied [ 'gulp-clean',
+171 silly dependencyIsSatisfied   '^0.3.2',
+171 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-lib/node_modules' ]
+172 verbose dependencyIsSatisfied gulp-clean false
+173 silly hasDependencyInstalled ds-demo-web gulp-clean
+174 silly dependencyIsSatisfied [ 'gulp-clean',
+174 silly dependencyIsSatisfied   '^0.3.2',
+174 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-web/node_modules' ]
+175 verbose dependencyIsSatisfied gulp-clean false
+176 silly hasDependencyInstalled @buildit/ds-demo-lib gulp-decompress
+177 silly dependencyIsSatisfied [ 'gulp-decompress',
+177 silly dependencyIsSatisfied   '^2.0.1',
+177 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-lib/node_modules' ]
+178 verbose dependencyIsSatisfied gulp-decompress false
+179 silly hasDependencyInstalled @buildit/ds-demo-lib gulp-download
+180 silly dependencyIsSatisfied [ 'gulp-download',
+180 silly dependencyIsSatisfied   '0.0.1',
+180 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-lib/node_modules' ]
+181 verbose dependencyIsSatisfied gulp-download false
+182 silly hasDependencyInstalled @buildit/ds-demo-lib gulp-filter
+183 silly dependencyIsSatisfied [ 'gulp-filter',
+183 silly dependencyIsSatisfied   '^5.0.0',
+183 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-lib/node_modules' ]
+184 verbose dependencyIsSatisfied gulp-filter false
+185 silly hasDependencyInstalled @buildit/ds-demo-lib gulp-less
+186 silly dependencyIsSatisfied [ 'gulp-less',
+186 silly dependencyIsSatisfied   '^3.3.0',
+186 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-lib/node_modules' ]
+187 verbose dependencyIsSatisfied gulp-less false
+188 silly hasDependencyInstalled ds-demo-web gulp-less
+189 silly dependencyIsSatisfied [ 'gulp-less',
+189 silly dependencyIsSatisfied   '^3.3.0',
+189 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-web/node_modules' ]
+190 verbose dependencyIsSatisfied gulp-less false
+191 silly hasDependencyInstalled @buildit/ds-demo-lib gulp-rename
+192 silly dependencyIsSatisfied [ 'gulp-rename',
+192 silly dependencyIsSatisfied   '^1.2.2',
+192 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-lib/node_modules' ]
+193 verbose dependencyIsSatisfied gulp-rename false
+194 silly hasDependencyInstalled @buildit/ds-demo-lib raw-loader
+195 silly dependencyIsSatisfied [ 'raw-loader',
+195 silly dependencyIsSatisfied   '^0.5.1',
+195 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-lib/node_modules' ]
+196 verbose dependencyIsSatisfied raw-loader false
+197 silly hasDependencyInstalled @buildit/ds-demo-lib url-loader
+198 silly dependencyIsSatisfied [ 'url-loader',
+198 silly dependencyIsSatisfied   '^0.5.8',
+198 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-lib/node_modules' ]
+199 verbose dependencyIsSatisfied url-loader false
+200 silly hasDependencyInstalled ds-demo-web chalk
+201 silly dependencyIsSatisfied [ 'chalk',
+201 silly dependencyIsSatisfied   '^1.1.3',
+201 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-web/node_modules' ]
+202 verbose dependencyIsSatisfied chalk false
+203 silly hasDependencyInstalled ds-demo-web download
+204 silly dependencyIsSatisfied [ 'download',
+204 silly dependencyIsSatisfied   '^5.0.3',
+204 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-web/node_modules' ]
+205 verbose dependencyIsSatisfied download false
+206 silly hasDependencyInstalled ds-demo-web extract-zip
+207 silly dependencyIsSatisfied [ 'extract-zip',
+207 silly dependencyIsSatisfied   '^1.6.0',
+207 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-web/node_modules' ]
+208 verbose dependencyIsSatisfied extract-zip false
+209 silly hasDependencyInstalled ds-demo-web gulp-cli
+210 silly dependencyIsSatisfied [ 'gulp-cli',
+210 silly dependencyIsSatisfied   '^1.2.2',
+210 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-web/node_modules' ]
+211 verbose dependencyIsSatisfied gulp-cli false
+212 silly hasDependencyInstalled ds-demo-web gulp-concat
+213 silly dependencyIsSatisfied [ 'gulp-concat',
+213 silly dependencyIsSatisfied   '^2.6.1',
+213 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-web/node_modules' ]
+214 verbose dependencyIsSatisfied gulp-concat false
+215 silly hasDependencyInstalled ds-demo-web gulp-connect
+216 silly dependencyIsSatisfied [ 'gulp-connect',
+216 silly dependencyIsSatisfied   '^5.0.0',
+216 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-web/node_modules' ]
+217 verbose dependencyIsSatisfied gulp-connect false
+218 silly hasDependencyInstalled ds-demo-web gulp-declare
+219 silly dependencyIsSatisfied [ 'gulp-declare',
+219 silly dependencyIsSatisfied   '^0.3.0',
+219 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-web/node_modules' ]
+220 verbose dependencyIsSatisfied gulp-declare false
+221 silly hasDependencyInstalled ds-demo-web gulp-handlebars
+222 silly dependencyIsSatisfied [ 'gulp-handlebars',
+222 silly dependencyIsSatisfied   '^4.0.0',
+222 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-web/node_modules' ]
+223 verbose dependencyIsSatisfied gulp-handlebars false
+224 silly hasDependencyInstalled ds-demo-web gulp-open
+225 silly dependencyIsSatisfied [ 'gulp-open',
+225 silly dependencyIsSatisfied   '^2.0.0',
+225 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-web/node_modules' ]
+226 verbose dependencyIsSatisfied gulp-open false
+227 silly hasDependencyInstalled ds-demo-web gulp-sourcemaps
+228 silly dependencyIsSatisfied [ 'gulp-sourcemaps',
+228 silly dependencyIsSatisfied   '^2.4.1',
+228 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-web/node_modules' ]
+229 verbose dependencyIsSatisfied gulp-sourcemaps false
+230 silly hasDependencyInstalled ds-demo-web gulp-uglify
+231 silly dependencyIsSatisfied [ 'gulp-uglify',
+231 silly dependencyIsSatisfied   '^2.1.2',
+231 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-web/node_modules' ]
+232 verbose dependencyIsSatisfied gulp-uglify false
+233 silly hasDependencyInstalled ds-demo-web gulp-watch
+234 silly dependencyIsSatisfied [ 'gulp-watch',
+234 silly dependencyIsSatisfied   '^4.3.11',
+234 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-web/node_modules' ]
+235 verbose dependencyIsSatisfied gulp-watch false
+236 silly hasDependencyInstalled ds-demo-web gulp-wrap
+237 silly dependencyIsSatisfied [ 'gulp-wrap',
+237 silly dependencyIsSatisfied   '^0.13.0',
+237 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-web/node_modules' ]
+238 verbose dependencyIsSatisfied gulp-wrap false
+239 silly hasDependencyInstalled ds-demo-web merge-stream
+240 silly dependencyIsSatisfied [ 'merge-stream',
+240 silly dependencyIsSatisfied   '^1.0.1',
+240 silly dependencyIsSatisfied   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-web/node_modules' ]
+241 verbose dependencyIsSatisfied merge-stream false
+242 silly root dependencies []
+243 silly leaf dependencies {
+243 silly leaf dependencies   "@buildit/ds-demo-app1": [
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "babel-core@~5.8.33",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "babel-eslint@~4.1.3",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "babel-loader@~5.3.3",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "css-loader@^0.20.2",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "file-loader@~0.8.4",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "html-webpack-plugin@~1.6.2",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "less@~2.5.3",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "less-loader@^2.2.2",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "style-loader@^0.13.1",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "webpack@~1.12.2",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "webpack-dev-server@^1.14.1",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "@buildit/ds-demo-lib@../ds-demo-lib",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "moment@^2.17.1",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "react@^15.4.2",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "react-dom@^15.4.2",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     }
+243 silly leaf dependencies   ],
+243 silly leaf dependencies   "@buildit/ds-demo-app2": [
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "babel-core@~5.8.33",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "babel-eslint@~4.1.3",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "babel-loader@~5.3.3",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "css-loader@^0.20.2",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "file-loader@~0.8.4",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "html-webpack-plugin@~1.6.2",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "less@~2.5.3",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "less-loader@^2.2.2",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "style-loader@^0.13.1",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "webpack@~1.12.2",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "webpack-dev-server@^1.14.1",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "@buildit/ds-demo-lib@../ds-demo-lib",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "moment@^2.17.1",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "react@^15.4.2",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "react-dom@^15.4.2",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     }
+243 silly leaf dependencies   ],
+243 silly leaf dependencies   "@buildit/ds-demo-lib": [
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "babel-loader@^6.3.2",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "css-loader@^0.26.1",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "less@^2.7.2",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "less-loader@^2.2.3",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "style-loader@^0.13.1",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "webpack@^2.4.1",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "react@^15.4.2",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "react-dom@^15.4.2",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "@buildit/storybook-addon-blabbr@latest",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "@buildit/storybook-addon-info@^3.3.0",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "@kadira/storybook@^2.21.0",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "@kadira/storybook-addon-knobs@^1.7.1",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "babel-cli@^6.23.0",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "babel-preset-es2015@^6.22.0",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "babel-preset-react@^6.23.0",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "babel-preset-stage-2@^6.22.0",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "gulp@^3.9.1",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "gulp-clean@^0.3.2",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "gulp-decompress@^2.0.1",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "gulp-download@0.0.1",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "gulp-filter@^5.0.0",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "gulp-less@^3.3.0",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "gulp-rename@^1.2.2",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "raw-loader@^0.5.1",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "url-loader@^0.5.8",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     }
+243 silly leaf dependencies   ],
+243 silly leaf dependencies   "ds-demo-web": [
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "less@^2.7.2",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "@buildit/ds-demo-lib@../ds-demo-lib",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "gulp@^3.9.1",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "gulp-clean@^0.3.2",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "gulp-less@^3.3.0",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "chalk@^1.1.3",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "download@^5.0.3",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "extract-zip@^1.6.0",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "gulp-cli@^1.2.2",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "gulp-concat@^2.6.1",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "gulp-connect@^5.0.0",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "gulp-declare@^0.3.0",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "gulp-handlebars@^4.0.0",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "gulp-open@^2.0.0",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "gulp-sourcemaps@^2.4.1",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "gulp-uglify@^2.1.2",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "gulp-watch@^4.3.11",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "gulp-wrap@^0.13.0",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     },
+243 silly leaf dependencies     {
+243 silly leaf dependencies       "dependency": "merge-stream@^1.0.1",
+243 silly leaf dependencies       "isSatisfied": false
+243 silly leaf dependencies     }
+243 silly leaf dependencies   ]
+243 silly leaf dependencies }
+244 info Installing external dependencies
+245 verbose actions 4 actions, concurrency 4
+246 silly installInDir ds-demo-app1 [ 'babel-core@~5.8.33',
+246 silly installInDir   'babel-eslint@~4.1.3',
+246 silly installInDir   'babel-loader@~5.3.3',
+246 silly installInDir   'css-loader@^0.20.2',
+246 silly installInDir   'file-loader@~0.8.4',
+246 silly installInDir   'html-webpack-plugin@~1.6.2',
+246 silly installInDir   'less@~2.5.3',
+246 silly installInDir   'less-loader@^2.2.2',
+246 silly installInDir   'style-loader@^0.13.1',
+246 silly installInDir   'webpack@~1.12.2',
+246 silly installInDir   'webpack-dev-server@^1.14.1',
+246 silly installInDir   '@buildit/ds-demo-lib@../ds-demo-lib',
+246 silly installInDir   'moment@^2.17.1',
+246 silly installInDir   'react@^15.4.2',
+246 silly installInDir   'react-dom@^15.4.2' ]
+247 silly installInDir backup /Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-app1/package.json
+248 silly rename [ '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-app1/package.json',
+248 silly rename   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-app1/package.json.lerna_backup' ]
+249 silly installInDir ds-demo-app2 [ 'babel-core@~5.8.33',
+249 silly installInDir   'babel-eslint@~4.1.3',
+249 silly installInDir   'babel-loader@~5.3.3',
+249 silly installInDir   'css-loader@^0.20.2',
+249 silly installInDir   'file-loader@~0.8.4',
+249 silly installInDir   'html-webpack-plugin@~1.6.2',
+249 silly installInDir   'less@~2.5.3',
+249 silly installInDir   'less-loader@^2.2.2',
+249 silly installInDir   'style-loader@^0.13.1',
+249 silly installInDir   'webpack@~1.12.2',
+249 silly installInDir   'webpack-dev-server@^1.14.1',
+249 silly installInDir   '@buildit/ds-demo-lib@../ds-demo-lib',
+249 silly installInDir   'moment@^2.17.1',
+249 silly installInDir   'react@^15.4.2',
+249 silly installInDir   'react-dom@^15.4.2' ]
+250 silly installInDir backup /Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-app2/package.json
+251 silly rename [ '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-app2/package.json',
+251 silly rename   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-app2/package.json.lerna_backup' ]
+252 silly installInDir ds-demo-lib [ 'babel-loader@^6.3.2',
+252 silly installInDir   'css-loader@^0.26.1',
+252 silly installInDir   'less@^2.7.2',
+252 silly installInDir   'less-loader@^2.2.3',
+252 silly installInDir   'style-loader@^0.13.1',
+252 silly installInDir   'webpack@^2.4.1',
+252 silly installInDir   'react@^15.4.2',
+252 silly installInDir   'react-dom@^15.4.2',
+252 silly installInDir   '@buildit/storybook-addon-blabbr@latest',
+252 silly installInDir   '@buildit/storybook-addon-info@^3.3.0',
+252 silly installInDir   '@kadira/storybook@^2.21.0',
+252 silly installInDir   '@kadira/storybook-addon-knobs@^1.7.1',
+252 silly installInDir   'babel-cli@^6.23.0',
+252 silly installInDir   'babel-preset-es2015@^6.22.0',
+252 silly installInDir   'babel-preset-react@^6.23.0',
+252 silly installInDir   'babel-preset-stage-2@^6.22.0',
+252 silly installInDir   'gulp@^3.9.1',
+252 silly installInDir   'gulp-clean@^0.3.2',
+252 silly installInDir   'gulp-decompress@^2.0.1',
+252 silly installInDir   'gulp-download@0.0.1',
+252 silly installInDir   'gulp-filter@^5.0.0',
+252 silly installInDir   'gulp-less@^3.3.0',
+252 silly installInDir   'gulp-rename@^1.2.2',
+252 silly installInDir   'raw-loader@^0.5.1',
+252 silly installInDir   'url-loader@^0.5.8' ]
+253 silly installInDir backup /Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-lib/package.json
+254 silly rename [ '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-lib/package.json',
+254 silly rename   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-lib/package.json.lerna_backup' ]
+255 silly installInDir ds-demo-web [ 'less@^2.7.2',
+255 silly installInDir   '@buildit/ds-demo-lib@../ds-demo-lib',
+255 silly installInDir   'gulp@^3.9.1',
+255 silly installInDir   'gulp-clean@^0.3.2',
+255 silly installInDir   'gulp-less@^3.3.0',
+255 silly installInDir   'chalk@^1.1.3',
+255 silly installInDir   'download@^5.0.3',
+255 silly installInDir   'extract-zip@^1.6.0',
+255 silly installInDir   'gulp-cli@^1.2.2',
+255 silly installInDir   'gulp-concat@^2.6.1',
+255 silly installInDir   'gulp-connect@^5.0.0',
+255 silly installInDir   'gulp-declare@^0.3.0',
+255 silly installInDir   'gulp-handlebars@^4.0.0',
+255 silly installInDir   'gulp-open@^2.0.0',
+255 silly installInDir   'gulp-sourcemaps@^2.4.1',
+255 silly installInDir   'gulp-uglify@^2.1.2',
+255 silly installInDir   'gulp-watch@^4.3.11',
+255 silly installInDir   'gulp-wrap@^0.13.0',
+255 silly installInDir   'merge-stream@^1.0.1' ]
+256 silly installInDir backup /Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-web/package.json
+257 silly rename [ '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-web/package.json',
+257 silly rename   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-web/package.json.lerna_backup' ]
+258 silly installInDir writing tempJson { dependencies:
+258 silly installInDir    { 'babel-core': '~5.8.33',
+258 silly installInDir      'babel-eslint': '~4.1.3',
+258 silly installInDir      'babel-loader': '~5.3.3',
+258 silly installInDir      'css-loader': '^0.20.2',
+258 silly installInDir      'file-loader': '~0.8.4',
+258 silly installInDir      'html-webpack-plugin': '~1.6.2',
+258 silly installInDir      less: '~2.5.3',
+258 silly installInDir      'less-loader': '^2.2.2',
+258 silly installInDir      'style-loader': '^0.13.1',
+258 silly installInDir      webpack: '~1.12.2',
+258 silly installInDir      'webpack-dev-server': '^1.14.1',
+258 silly installInDir      '@buildit/ds-demo-lib': '../ds-demo-lib',
+258 silly installInDir      moment: '^2.17.1',
+258 silly installInDir      react: '^15.4.2',
+258 silly installInDir      'react-dom': '^15.4.2' } }
+259 silly installInDir writing tempJson { dependencies:
+259 silly installInDir    { 'babel-loader': '^6.3.2',
+259 silly installInDir      'css-loader': '^0.26.1',
+259 silly installInDir      less: '^2.7.2',
+259 silly installInDir      'less-loader': '^2.2.3',
+259 silly installInDir      'style-loader': '^0.13.1',
+259 silly installInDir      webpack: '^2.4.1',
+259 silly installInDir      react: '^15.4.2',
+259 silly installInDir      'react-dom': '^15.4.2',
+259 silly installInDir      '@buildit/storybook-addon-blabbr': 'latest',
+259 silly installInDir      '@buildit/storybook-addon-info': '^3.3.0',
+259 silly installInDir      '@kadira/storybook': '^2.21.0',
+259 silly installInDir      '@kadira/storybook-addon-knobs': '^1.7.1',
+259 silly installInDir      'babel-cli': '^6.23.0',
+259 silly installInDir      'babel-preset-es2015': '^6.22.0',
+259 silly installInDir      'babel-preset-react': '^6.23.0',
+259 silly installInDir      'babel-preset-stage-2': '^6.22.0',
+259 silly installInDir      gulp: '^3.9.1',
+259 silly installInDir      'gulp-clean': '^0.3.2',
+259 silly installInDir      'gulp-decompress': '^2.0.1',
+259 silly installInDir      'gulp-download': '0.0.1',
+259 silly installInDir      'gulp-filter': '^5.0.0',
+259 silly installInDir      'gulp-less': '^3.3.0',
+259 silly installInDir      'gulp-rename': '^1.2.2',
+259 silly installInDir      'raw-loader': '^0.5.1',
+259 silly installInDir      'url-loader': '^0.5.8' } }
+260 silly installInDir writing tempJson { dependencies:
+260 silly installInDir    { 'babel-core': '~5.8.33',
+260 silly installInDir      'babel-eslint': '~4.1.3',
+260 silly installInDir      'babel-loader': '~5.3.3',
+260 silly installInDir      'css-loader': '^0.20.2',
+260 silly installInDir      'file-loader': '~0.8.4',
+260 silly installInDir      'html-webpack-plugin': '~1.6.2',
+260 silly installInDir      less: '~2.5.3',
+260 silly installInDir      'less-loader': '^2.2.2',
+260 silly installInDir      'style-loader': '^0.13.1',
+260 silly installInDir      webpack: '~1.12.2',
+260 silly installInDir      'webpack-dev-server': '^1.14.1',
+260 silly installInDir      '@buildit/ds-demo-lib': '../ds-demo-lib',
+260 silly installInDir      moment: '^2.17.1',
+260 silly installInDir      react: '^15.4.2',
+260 silly installInDir      'react-dom': '^15.4.2' } }
+261 silly installInDir writing tempJson { dependencies:
+261 silly installInDir    { less: '^2.7.2',
+261 silly installInDir      '@buildit/ds-demo-lib': '../ds-demo-lib',
+261 silly installInDir      gulp: '^3.9.1',
+261 silly installInDir      'gulp-clean': '^0.3.2',
+261 silly installInDir      'gulp-less': '^3.3.0',
+261 silly installInDir      chalk: '^1.1.3',
+261 silly installInDir      download: '^5.0.3',
+261 silly installInDir      'extract-zip': '^1.6.0',
+261 silly installInDir      'gulp-cli': '^1.2.2',
+261 silly installInDir      'gulp-concat': '^2.6.1',
+261 silly installInDir      'gulp-connect': '^5.0.0',
+261 silly installInDir      'gulp-declare': '^0.3.0',
+261 silly installInDir      'gulp-handlebars': '^4.0.0',
+261 silly installInDir      'gulp-open': '^2.0.0',
+261 silly installInDir      'gulp-sourcemaps': '^2.4.1',
+261 silly installInDir      'gulp-uglify': '^2.1.2',
+261 silly installInDir      'gulp-watch': '^4.3.11',
+261 silly installInDir      'gulp-wrap': '^0.13.0',
+261 silly installInDir      'merge-stream': '^1.0.1' } }
+262 silly getExecOpts { cwd: '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-web' }
+263 silly installInDir [ 'npm', [ 'install' ] ]
+264 silly getExecOpts { cwd: '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-lib' }
+265 silly installInDir [ 'npm', [ 'install' ] ]
+266 silly getExecOpts { cwd: '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-app1' }
+267 silly installInDir [ 'npm', [ 'install' ] ]
+268 silly getExecOpts { cwd: '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-app2' }
+269 silly installInDir [ 'npm', [ 'install' ] ]
+270 silly installInDir cleanup /Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-web/package.json
+271 silly renameSync [ '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-web/package.json.lerna_backup',
+271 silly renameSync   '/Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-web/package.json' ]
+272 verbose installed leaf ds-demo-web
+273 error execute Error: Command failed: npm install
+273 error execute npm ERR! addLocal Could not install /Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-lib
+273 error execute npm ERR! Darwin 16.5.0
+273 error execute npm ERR! argv "/usr/local/bin/node" "/usr/local/bin/npm" "install"
+273 error execute npm ERR! node v6.10.1
+273 error execute npm ERR! npm  v3.10.10
+273 error execute
+273 error execute npm ERR! No name provided in package.json
+273 error execute npm ERR!
+273 error execute npm ERR! If you need help, you may report this error at:
+273 error execute npm ERR!     <https://github.com/npm/npm/issues>
+273 error execute
+273 error execute npm ERR! Please include the following file with any support request:
+273 error execute npm ERR!     /Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-web/npm-debug.log
+273 error execute
+273 error execute     at Promise.all.then.arr (/usr/local/lib/node_modules/lerna/node_modules/execa/index.js:210:11)
+273 error execute     at process._tickCallback (internal/process/next_tick.js:109:7)
+273 error execute  callback with error
+273 error execute  { Error: Command failed: npm install
+273 error execute npm ERR! addLocal Could not install /Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-lib
+273 error execute npm ERR! Darwin 16.5.0
+273 error execute npm ERR! argv "/usr/local/bin/node" "/usr/local/bin/npm" "install"
+273 error execute npm ERR! node v6.10.1
+273 error execute npm ERR! npm  v3.10.10
+273 error execute
+273 error execute npm ERR! No name provided in package.json
+273 error execute npm ERR!
+273 error execute npm ERR! If you need help, you may report this error at:
+273 error execute npm ERR!     <https://github.com/npm/npm/issues>
+273 error execute
+273 error execute npm ERR! Please include the following file with any support request:
+273 error execute npm ERR!     /Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-web/npm-debug.log
+273 error execute
+273 error execute     at Promise.all.then.arr (/usr/local/lib/node_modules/lerna/node_modules/execa/index.js:210:11)
+273 error execute     at process._tickCallback (internal/process/next_tick.js:109:7)
+273 error execute   code: 1,
+273 error execute   killed: false,
+273 error execute   stdout: '',
+273 error execute   stderr: 'npm ERR! addLocal Could not install /Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-lib\nnpm ERR! Darwin 16.5.0\nnpm ERR! argv "/usr/local/bin/node" "/usr/local/bin/npm" "install"\nnpm ERR! node v6.10.1\nnpm ERR! npm  v3.10.10\n\nnpm ERR! No name provided in package.json\nnpm ERR! \nnpm ERR! If you need help, you may report this error at:\nnpm ERR!     <https://github.com/npm/npm/issues>\n\nnpm ERR! Please include the following file with any support request:\nnpm ERR!     /Users/panos/git/buildit/ds-demo-lib/packages/ds-demo-web/npm-debug.log\n',
+273 error execute   failed: true,
+273 error execute   signal: null,
+273 error execute   cmd: 'npm install',
+273 error execute   timedOut: false }

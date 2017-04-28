@@ -1,0 +1,63 @@
+{
+  "name": "@buildit/ds-demo-lib",
+  "version": "0.0.1",
+  "description": "Design System Demo UI Library.",
+  "main": "dist/index.js",
+  "module": "src/index.js",
+  "scripts": {
+    "start": "npm run storybook",
+    "storybook": "start-storybook -p 9000",
+    "build-storybook": "build-storybook",
+    "prepublish": "npm run clean && npm run copy && npm run build:prod",
+    "assets": "gulp assets",
+    "build": "npm run copy && webpack --config webpack.config.js",
+    "build:prod": "webpack --config webpack.config.js -p",
+    "clean": "gulp clean",
+    "copy": "gulp copy-styles"
+  },
+  "repository": {
+    "url": "https://github.com/buildit/ds-demo/packages/ds-demo-lib"
+  },
+  "keywords": [
+    "react",
+    "storybook",
+    "atomic-design"
+  ],
+  "author": "Buildit",
+  "contributors": [
+    {
+      "name": "Panos Voudouris",
+      "url": "https://github.com/panosvoudouris"
+    }
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "devDependencies": {
+    "@buildit/storybook-addon-blabbr": "latest",
+    "@buildit/storybook-addon-info": "^3.3.0",
+    "@kadira/storybook": "^2.21.0",
+    "@kadira/storybook-addon-knobs": "^1.7.1",
+    "babel-cli": "^6.23.0",
+    "babel-loader": "^6.3.2",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.23.0",
+    "babel-preset-stage-2": "^6.22.0",
+    "css-loader": "^0.26.1",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-decompress": "^2.0.1",
+    "gulp-download": "0.0.1",
+    "gulp-filter": "^5.0.0",
+    "gulp-less": "^3.3.0",
+    "gulp-rename": "^1.2.2",
+    "less": "^2.7.2",
+    "less-loader": "^2.2.3",
+    "raw-loader": "^0.5.1",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.8",
+    "webpack": "^2.4.1"
+  }
+}
