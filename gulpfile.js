@@ -1,11 +1,10 @@
-'use strict';
-
 const gulp = require('gulp');
 const less = require('gulp-less');
 const decompress = require('gulp-decompress');
 const download = require('gulp-download');
 const rename = require('gulp-rename');
 const filter = require('gulp-filter');
+const clean = require('gulp-clean');
 
 const brandai = require('./brandai.config').default.brandai;
 const frontify = require('./brandai.config').default.frontify;
@@ -14,6 +13,15 @@ const targetDir = 'src/assets';
 const brandaiDir = `${targetDir}/brandai`;
 const frontifyDir = `${targetDir}/frontify`;
 
+gulp.task('clean', function () {
+    return gulp.src('dist', {read: false})
+      .pipe(clean());
+});
+
+gulp.task('copy-styles', () => {
+  return gulp.src(['./src/**/*.less'])
+    .pipe(gulp.dest('dist'));
+});
 
 gulp.task('assets:brandai:styles', function(){
   return download(brandai.styles)
@@ -54,7 +62,6 @@ gulp.task('assets:frontify:logos', function(){
     }))
     .pipe(gulp.dest(frontifyDir));
 });
-
 
 gulp.task('assets', ['assets:brandai:styles', 'assets:brandai:logos', 'assets:frontify:devkit', 'assets:frontify:logos']);
 
