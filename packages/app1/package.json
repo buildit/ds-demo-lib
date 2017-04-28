@@ -1,0 +1,35 @@
+{
+  "name": "@buildit/ds-demo-app1",
+  "version": "0.0.1",
+  "description": "Desing System Demo App 1",
+  "scripts": {
+    "build": "webpack --colors",
+    "start": "webpack-dev-server --hot --inline --host 0.0.0.0 --port 9001"
+  },
+  "repository": {
+    "url": "https://github.com/buildit/ds-demo/packages/ds-demo-app1"
+  },
+  "author": "Buildit",
+  "license": "MIT",
+  "dependencies": {
+    "@buildit/ds-demo-lib": "^0.0.1",
+    "moment": "^2.17.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-loader": "^6.3.2",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.23.0",
+    "babel-preset-stage-2": "^6.22.0",
+    "css-loader": "^0.20.2",
+    "file-loader": "~0.8.4",
+    "html-webpack-plugin": "~1.6.2",
+    "less": "~2.5.3",
+    "less-loader": "^2.2.2",
+    "style-loader": "^0.13.1",
+    "webpack": "~1.12.2",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
