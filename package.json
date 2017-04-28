@@ -8,12 +8,12 @@
     "start": "npm run storybook",
     "storybook": "start-storybook -p 9000",
     "build-storybook": "build-storybook",
-    "transpile": "babel ./src --out-dir dist --copy-files",
-    "prepublish": "npm run transpile && npm run build:prod",
+    "prepublish": "npm run clean && npm run copy && npm run build:prod",
     "assets": "gulp assets",
-    "build": "webpack --config webpack.config.js",
+    "build": "npm run copy && webpack --config webpack.config.js",
     "build:prod": "webpack --config webpack.config.js -p",
-    "clean": "rm -fr dist"
+    "clean": "gulp clean",
+    "copy": "gulp copy-styles"
   },
   "repository": {
     "type": "git",
@@ -48,6 +48,7 @@
     "babel-preset-stage-2": "^6.22.0",
     "css-loader": "^0.26.1",
     "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
     "gulp-decompress": "^2.0.1",
     "gulp-download": "0.0.1",
     "gulp-filter": "^5.0.0",
