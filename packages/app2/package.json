@@ -4,7 +4,8 @@
   "description": "Desing System Demo App 2",
   "scripts": {
     "build": "webpack --colors",
-    "start": "webpack-dev-server --hot --inline --host 0.0.0.0 --port 9002"
+    "start": "webpack-dev-server --hot --inline --host 0.0.0.0 --port 9002",
+    "clean": "rm -fr dist"
   },
   "repository": {
     "url": "https://github.com/buildit/ds-demo/packages/ds-demo-app2"

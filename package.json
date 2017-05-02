@@ -3,6 +3,8 @@
   "version": "0.0.1",
   "description": "Desing System Demo",
   "scripts": {
+    "clean": "lerna run clean",
+    "build": "lerna run build"
   },
   "repository": {
     "type": "git",
