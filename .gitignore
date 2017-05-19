@@ -6,3 +6,4 @@ dist
 .storybook/blabbr-config.js
 brandai.config.js
 downloads
+storybook-static
