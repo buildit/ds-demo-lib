@@ -8,10 +8,10 @@
     "start": "npm run storybook",
     "storybook": "start-storybook -p 9000 -s ./.storybook",
     "build-storybook": "build-storybook",
-    "prepublish": "in-publish && npm run clean && npm run copy && npm run build:prod",
     "assets": "gulp assets",
     "build": "npm run copy && webpack --config webpack.config.js",
     "build:prod": "webpack --config webpack.config.js -p",
+    "rebuild": "npm run clean && npm run copy && npm run build:prod",
     "clean": "gulp clean",
     "copy": "gulp copy-styles"
   },
@@ -33,7 +33,6 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "in-publish": "^2.0.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2"
   },
