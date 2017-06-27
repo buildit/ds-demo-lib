@@ -1,0 +1,17 @@
+machine:
+  node:
+    version: 6.9.2
+  services:
+    - docker
+
+compile:
+  override:
+    - npm run build-storybook
+
+deployment:
+  production:
+    branch: master
+    commands:
+      - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PWD
+      - docker build --rm=false --pull -t $PRODUTION_IMAGE .
+      - docker push $PRODUTION_IMAGE
