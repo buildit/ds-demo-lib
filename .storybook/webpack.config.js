@@ -1,34 +1,33 @@
 const path = require('path');
-const webpack = require('webpack');
 
-module.exports = {
-	module: {
+// Export a function. Accept the base config as the only param.
+module.exports = (storybookBaseConfig, configType) => {
+  // configType has a value of 'DEVELOPMENT' or 'PRODUCTION'
+  // You can change the configuration based on that.
+  // 'PRODUCTION' is used when building the static version of storybook.
 
-		preLoaders: [],
+  // Make whatever fine-grained changes you need
+  storybookBaseConfig.module.rules.push({
+    test: /\.css$/,
+    loaders: ["style-loader", "css-loader"],
+    include: path.resolve(__dirname, '../')
+  });
+  storybookBaseConfig.module.rules.push({
+    test: /\.less$/,
+    loaders: ["style-loader", "css-loader", "less-loader"],
+    include: path.resolve(__dirname, '../')
+  });
+  storybookBaseConfig.module.rules.push({
+    test: /\.(png|jpg|gif)$/,
+    loaders: ["file-loader"],
+    include: path.resolve(__dirname, '../')
+  });
+  storybookBaseConfig.module.rules.push({
+    test: /\.(eot|ttf|woff|woff2)(\?v=\d+\.\d+\.\d+)$/,
+    loaders: ["file-loader"],
+    include: path.resolve(__dirname, '../')
+  });
 
-		loaders: [
-			{ test: /\.(js|jsx)$/, exclude: [ /node_modules/ ], loader: 'babel' },
-			{ test: /\.(png|jpg|gif)$/, loader: 'file-loader' },
-      { test: /\.css$/, loader: 'style-loader!css-loader' },
-      { test: /\.less$/, loader: 'style-loader!css-loader!less-loader' },
-			{ test: /\.(eot|ttf|woff|woff2)(\?v=\d+\.\d+\.\d+)?$/, loader: 'file-loader' }
-		]
-	},
-
-	resolve: {
-		root: path.resolve(__dirname),
-		extensions: ['', '.js', '.jsx'],
-    alias: {
-      'blabbr-config': path.join(path.resolve(__dirname), './blabbr-config.js')
-    }
-	},
-
-	plugins: [
-	],
-
-	devServer: {
-		stats: 'minimal'
-	},
-
-	devtool: 'source-map'
+  // Return the altered config
+  return storybookBaseConfig;
 };

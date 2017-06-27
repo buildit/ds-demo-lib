@@ -1,8 +1,8 @@
 import React from 'react';
-import { configure, setAddon, addDecorator } from '@kadira/storybook';
-import { withKnobs } from '@kadira/storybook-addon-knobs';
+import { configure, setAddon, addDecorator } from '@storybook/react';
+import { withKnobs } from '@storybook/addon-knobs';
 import { withComments } from '@buildit/storybook-addon-blabbr';
-import InfoAddon from '@buildit/storybook-addon-info';
+import InfoAddon from '@storybook/addon-info';
 // import '../src/vanilla.less';
 import '../src/unicorn-inc.less';
 // import '../src/taco-bank.less';
@@ -17,10 +17,10 @@ addDecorator((story) => (
 	</div>
 ));
 
+const req = require.context('../stories', true, /\.js$/)
+
 function loadStories() {
-  require('../stories/button');
-  require('../stories/header');
-  require('../stories/footer');
+  req.keys().forEach(req)
 }
 
 configure(loadStories, module);

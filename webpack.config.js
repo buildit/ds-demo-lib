@@ -23,6 +23,8 @@ module.exports = {
     rules: [
       { test: /\.(js|jsx)$/, use: 'babel-loader' },
       { test: /\.(png|jpg|gif)$/, loader: 'url-loader' },
+      { test: /\.css$/, loader: 'style-loader!css-loader' },
+      { test: /\.less$/, loader: 'style-loader!css-loader!less-loader' }
     ]
   },
 

@@ -1,0 +1,28 @@
+{
+  "storybook": {
+    "blabbr": {
+      "db": {
+        "user": "keditheapplaselaysiester",
+        "pwd": "98344304f66e9adb20f8c6f82038ea93681e2a8a",
+        "host": "jonathan-ec.cloudant.com/blabbr"
+      },
+      "slack": {
+        "endPoint": "https://hooks.slack.com/services/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"
+      },
+      "ui": {
+        "avatar": true
+      }
+    },
+    "versions": {
+      "availableVersions": [
+        "0_0_1",
+        "0_0_2",
+        "0.2.13",
+        "0.3.4"
+      ],
+      "hostname": "localhost:8000",
+      "localhost": "localhost:9001",
+	  "regex": "\/([^\/]+?)\/?$"
+    }
+  }
+}

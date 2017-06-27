@@ -1,6 +1,6 @@
 import React from 'react';
-import { storiesOf, action, linkTo } from '@kadira/storybook';
-import { text } from '@kadira/storybook-addon-knobs';
+import { storiesOf, action, linkTo } from '@storybook/react';
+import { text } from '@storybook/addon-knobs';
 
 import { Header } from '../src';
 
