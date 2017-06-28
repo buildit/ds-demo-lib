@@ -15,10 +15,6 @@
     },
     "versions": {
       "availableVersions": [
-        "0_0_1",
-        "0_0_2",
-        "0.2.13",
-        "0.3.4"
       ],
       "hostname": "localhost:8000",
       "localhost": "localhost:9001",
