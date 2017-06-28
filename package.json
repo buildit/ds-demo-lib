@@ -7,7 +7,7 @@
   "scripts": {
     "start": "npm run storybook",
     "storybook": "start-storybook -p 9000 -s ./.storybook",
-    "build-storybook": "build-storybook",
+    "build-storybook": "build-storybook && npm run version-storybook",
     "version-storybook": "node ./scripts/version-storybook",
     "assets": "gulp assets",
     "build": "npm run copy && webpack --config webpack.config.js",
@@ -15,7 +15,7 @@
     "rebuild": "npm run clean && npm run copy && npm run build:prod",
     "clean": "gulp clean",
     "copy": "gulp copy-styles",
-    "serve": "ws -d storybook-hosted"
+    "serve": "ws -d storybook-hosted -p 8080"
   },
   "repository": {
     "type": "git",

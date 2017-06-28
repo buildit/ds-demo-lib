@@ -4,10 +4,6 @@ machine:
   services:
     - docker
 
-compile:
-  override:
-    - npm run build-storybook && npm run version-storybook
-
 test:
   override:
     - "true"
