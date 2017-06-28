@@ -8,6 +8,10 @@ compile:
   override:
     - npm run build-storybook
 
+test:
+  override:
+    - "true"
+
 deployment:
   production:
     branch: master
