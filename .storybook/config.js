@@ -1,7 +1,6 @@
 import React from 'react';
 import { configure, setAddon, addDecorator } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
-import { withComments } from '@buildit/storybook-addon-blabbr';
 import infoAddon from '@storybook/addon-info';
 
 // import '../src/vanilla.less';
@@ -11,7 +10,6 @@ import '../src/unicorn-inc.less';
 setAddon(infoAddon);
 
 addDecorator(withKnobs);
-addDecorator(withComments);
 
 const req = require.context('../stories', true, /\.js$/);
 
