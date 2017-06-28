@@ -10,3 +10,20 @@ const configFile = `${versionsDir}/storybook-config.json`;
 // First move the directory
 fs.moveSync(srcDir, targetDir, { overwrite: true });
 // Now edit the config
+const configFileContent = fs.readJsonSync(configFile);
+const versions = configFileContent.storybook.versions.availableVersions;
+
+// Check that we don't have that version just yet
+let versionFound = false;
+for (let v of versions) {
+  if (v === version) {
+    versionFound = true;
+    break;
+  }
+}
+
+if (!versionFound) {
+  versions.push(version);
+}
+
+fs.outputJsonSync(configFile, configFileContent, {spaces: 2});
