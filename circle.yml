@@ -6,7 +6,7 @@ machine:
 
 compile:
   override:
-    - npm run build-storybook
+    - npm run build-storybook && npm run version-storybook
 
 test:
   override:
