@@ -6,7 +6,6 @@
         "0.0.3",
         "0.1.0"
       ],
-      "hostname": "localhost:8080",
       "localhost": "localhost:9001",
       "regex": "/([^/]+?)/?$"
     }

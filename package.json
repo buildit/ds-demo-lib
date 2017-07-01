@@ -40,13 +40,13 @@
     "react-dom": "^15.4.2"
   },
   "devDependencies": {
-    "@buildit/storybook-addon-blabbr": "latest",
+    "@buildit/storybook-addon-blabbr": "^1.1.0",
     "@buildit/storybook-addon-versions": "latest",
     "@storybook/addon-actions": "^3.1.2",
     "@storybook/addon-info": "^3.1.6",
     "@storybook/addon-knobs": "^3.1.2",
     "@storybook/addons": "^3.1.6",
-    "@storybook/react": "^3.1.6",
+    "@storybook/react": "^3.1.7",
     "babel-cli": "^6.23.0",
     "babel-loader": "^7.1.0",
     "babel-preset-es2015": "^6.22.0",
