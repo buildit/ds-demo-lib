@@ -11,6 +11,8 @@ test:
 deployment:
   production:
     branch: master
+    heroku:
+      appname: buildit-ds-demo-lib
     commands:
       - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PWD
       - docker build --rm=false --pull -t $PRODUTION_IMAGE .
