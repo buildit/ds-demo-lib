@@ -2,9 +2,9 @@
   "storybook": {
     "blabbr": {
       "db": {
-        "user": "keditheapplaselaysiester",
-        "pwd": "98344304f66e9adb20f8c6f82038ea93681e2a8a",
-        "host": "jonathan-ec.cloudant.com/blabbr"
+        "user": "ds-demo",
+        "pwd": "designsystem",
+        "host": "localhost:5984"
       },
       "slack": {
         "endPoint": "https://hooks.slack.com/services/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"

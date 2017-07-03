@@ -1,12 +1,20 @@
 {
   "storybook": {
+    "blabbr": {
+      "db": {
+        "user": "ds-demo",
+        "pwd": "designsystem",
+        "host": "localhost:5984"
+      },
+      "ui": {
+        "avatar": true
+      }
+    },
     "versions": {
       "availableVersions": [
-        "0.0.2",
-        "0.0.3",
-        "0.1.0"
+        "0.1.0",
+        "0.1.1"
       ],
-      "hostname": "localhost:8080",
       "localhost": "localhost:9001",
       "regex": "/([^/]+?)/?$"
     }
